@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnd4acixbmuc4"]
+
+[ext_resource type="PackedScene" uid="uid://drxu6j5f0hbcl" path="res://Scenes/Enemies/Common/double_shooter_enemy.tscn" id="1_w577b"]
+[ext_resource type="Script" path="res://Scripts/Enemies/Common/sinusoid_double_shooter_enemy.gd" id="2_epxan"]
+
+[node name="SinusoidDoubleShooterEnemy" instance=ExtResource("1_w577b")]
+script = ExtResource("2_epxan")
+verticalSpeed = 100.0
+fireRate = 3.0
+frequency = 3.0
+amplitude = 500
+speed = 10.0
+health = 10

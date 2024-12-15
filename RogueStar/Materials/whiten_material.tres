@@ -1,0 +1,7 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://jfw01jgs047y"]
+
+[ext_resource type="Shader" uid="uid://21wfinf540h" path="res://Shaders/flash_white.tres" id="1_fhil2"]
+
+[resource]
+shader = ExtResource("1_fhil2")
+shader_parameter/whiten = false

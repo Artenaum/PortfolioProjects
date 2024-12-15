@@ -1,0 +1,186 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1734272718
+default_bus_layout.tres::AudioBusLayout::7038732550131704631::1687554190::0::1::::<><>::
+export_presets.cfg::TextFile::-1::1687561684::0::1::::<><>::
+icon.svg::CompressedTexture2D::8610723104427273491::1680174242::1734271914::1::::<><>::
+::res://Graphics/::1734272472
+::res://Graphics/Backgrounds/::1734271915
+space background1.jpg::CompressedTexture2D::353953447417482793::1685456000::1734271914::1::::<><>::
+space background 2.jpg::CompressedTexture2D::297812690601470673::1685457022::1734271915::1::::<><>::
+space background 3.jpg::CompressedTexture2D::4293631787678704386::1685457456::1734271914::1::::<><>::
+::res://Graphics/Sprites/::1734271914
+asteroid1.png::CompressedTexture2D::8047653038586126009::1685969742::1734271914::1::::<><>::
+star_example.png::CompressedTexture2D::64248928334599699::1685037592::1734271914::1::::<><>::
+::res://Graphics/Sprites/Enemies/::1681819746
+::res://Graphics/Sprites/Enemies/Bosses/::1681819740
+::res://Graphics/Sprites/Enemies/Common/::1734271914
+enemy placeholder.png::CompressedTexture2D::224909959448722241::1681819768::1734271914::1::::<><>::
+ship1_example.png::CompressedTexture2D::2267487462514294851::1685071366::1734271914::1::::<><>::
+ship2_example.png::CompressedTexture2D::504943730244466064::1685071366::1734271914::1::::<><>::
+ship3_example.png::CompressedTexture2D::6012878985034934849::1685071366::1734271914::1::::<><>::
+ship4_example.png::CompressedTexture2D::7993445251385155778::1685071366::1734271914::1::::<><>::
+ship5.png::CompressedTexture2D::1224635279288472146::1685071366::1734271914::1::::<><>::
+ship6.png::CompressedTexture2D::8516589444158791385::1685071366::1734271914::1::::<><>::
+ship7.png::CompressedTexture2D::7730527213301421617::1685071366::1734271914::1::::<><>::
+ship8.png::CompressedTexture2D::7986015108726182519::1685370540::1685370564::1::::<><>::
+ship9.png::CompressedTexture2D::5034013352618093762::1685370540::1685370564::1::::<><>::
+ship10.png::CompressedTexture2D::146718708448004245::1685370540::1685370564::1::::<><>::
+ship11.png::CompressedTexture2D::2577539006702722137::1685370540::1685370564::1::::<><>::
+ship12.png::CompressedTexture2D::3221878030784773288::1685370540::1685370564::1::::<><>::
+ship13.png::CompressedTexture2D::788285874180342337::1685370540::1685370564::1::::<><>::
+::res://Graphics/Sprites/Enemies/Minibosses/::1681819732
+::res://Graphics/Sprites/Icons/::1734271914
+Attack Icon.png::CompressedTexture2D::741398728123005187::1685987872::1734271914::1::::<><>::
+Speed Icon.png::CompressedTexture2D::5904793171435496846::1685974516::1734271914::1::::<><>::
+::res://Graphics/Sprites/Player/::1734271914
+player ship example.png::CompressedTexture2D::3298197924719567322::1680175030::1734271914::1::::<><>::
+::res://Graphics/Sprites/Projectiles/::1682333374
+::res://Graphics/Sprites/Projectiles/Enemy/::1734271914
+enemy_plasma.png::CompressedTexture2D::262995960707558364::1682333330::1734271914::1::::<><>::
+::res://Graphics/Sprites/Projectiles/Enemy/Bosses/::1734271914
+Boss1Attack1.png::CompressedTexture2D::9155196124164513955::1684839194::1684839194::1::::<><>::
+Boss1Attack2.png::CompressedTexture2D::6480981496878249534::1684850196::1684850204::1::::<><>::
+Boss1Attack3.png::CompressedTexture2D::8612634348265986392::1684852332::1684852332::1::::<><>::
+Boss3Attack3.png::CompressedTexture2D::3417789095519398958::1684939688::1734271914::1::::<><>::
+::res://Graphics/Sprites/Projectiles/Player/::1734271914
+Projectile Example.png::CompressedTexture2D::2597021454394502560::1680185822::1734271914::1::::<><>::
+::res://Materials/::1734272223
+redden_material.tres::ShaderMaterial::6793149384523667978::1734272223::0::1::::<><>::res://Shaders/flash_red.gdshader
+whiten_material.tres::ShaderMaterial::643403280009102260::1734272223::0::1::::<><>::uid://21wfinf540h::::res://Shaders/flash_white.tres
+::res://Scenes/::1734272611
+blinker.tscn::PackedScene::8983959583790430978::1686496782::0::1::::<><>::res://Scripts/blinker.gd
+player.tscn::PackedScene::5201062095410118820::1734272611::0::1::::<><>::res://Scripts/player_controller.gd<>uid://bm8w3qwxiw6j3::::res://Graphics/Sprites/Player/player ship example.png<>uid://jfw01jgs047y::::res://Materials/whiten_material.tres<>uid://70dyucoqq33r::::res://Scenes/Weapons/plasma_gun.tscn<>res://Scripts/item_detector.gd<>uid://d085rcbwenyle::::res://Scenes/blinker.tscn
+star.tscn::PackedScene::7055571500863941517::1734272611::0::1::::<><>::uid://6ef2b4s57qd::::res://Graphics/Sprites/star_example.png<>res://Scripts/star.gd
+::res://Scenes/Bonuses/::1686496782
+attack_bonus.tscn::PackedScene::5358009409911818018::1686496782::0::1::::<><>::res://Scripts/Bonuses/attack_bonus.gd<>uid://ktey1odpbfih::::res://Graphics/Sprites/Icons/Attack Icon.png
+speed_bonus.tscn::PackedScene::3464670437193328070::1686496782::0::1::::<><>::uid://cqelc0pblixr7::::res://Graphics/Sprites/Icons/Speed Icon.png<>res://Scripts/Bonuses/speed_bonus.gd
+::res://Scenes/Enemies/::1734272611
+asteroid.tscn::PackedScene::5637138516425510159::1686496782::0::1::::<><>::uid://bk5e74ilh2oaw::::res://Scenes/Enemies/enemy.tscn<>res://Scripts/Enemies/asteroid.gd<>uid://dmwlw1iuans5n::::res://Graphics/Sprites/asteroid1.png<>uid://bpmku68thf7h7::::res://Scenes/Bonuses/speed_bonus.tscn<>uid://cilpvq1ws1xpy::::res://Scenes/Bonuses/attack_bonus.tscn
+boss.tscn::PackedScene::4588770050191424703::1684849226::0::1::::<><>::uid://cef5xhcjskw60<>res://Scripts/Enemies/boss.gd
+enemy.tscn::PackedScene::3150542002117051638::1734272611::0::1::::<><>::uid://dg7h7x57wh1b::::res://Graphics/Sprites/Enemies/Common/enemy placeholder.png<>res://Scripts/Enemies/enemy.gd<>uid://b6ikkuqsilryk::::res://Shaders/flash_red2.tres<>uid://c31wgbvcfxmco::::res://Materials/redden_material.tres
+mini_boss.tscn::PackedScene::5065781584937889311::1685615262::0::1::::<><>::uid://bk5e74ilh2oaw::::res://Scenes/Enemies/enemy.tscn<>res://Scripts/Enemies/mini_boss.gd
+::res://Scenes/Enemies/Bosses/::1734272612
+boss_1.tscn::PackedScene::406383769898249905::1686497962::0::1::::<><>::uid://b6m3mwm3raowl::::res://Scenes/Enemies/boss.tscn<>res://Scripts/Enemies/Bosses/boss_1.gd<>uid://ddlc8q8451wwl::::res://Scenes/Projectiles/Enemy/Bosses/boss_1_bullet_1.tscn<>uid://b7xlyu550f40v::::res://Scenes/Projectiles/Enemy/Bosses/boss_1_bullet_2.tscn<>uid://mou2j0ku7fnh::::res://Scenes/Projectiles/Enemy/Bosses/boss_1_bullet_3.tscn<>uid://fem40rimyuak::::res://Scenes/Projectiles/Enemy/Bosses/boss_1_bullet_4.tscn<>uid://cdyrp15kv3cf7::::res://Graphics/Sprites/Enemies/Common/ship9.png
+boss_2.tscn::PackedScene::843344164254633158::1686510196::0::1::::<><>::uid://b6m3mwm3raowl::::res://Scenes/Enemies/boss.tscn<>res://Scripts/Enemies/Bosses/boss_2.gd<>uid://bb2sflbmohuax::::res://Scenes/Projectiles/Enemy/Bosses/boss_2_bullet_1.tscn<>uid://crmmplwf216i1::::res://Scenes/Projectiles/Enemy/Bosses/boss_2_bullet_2.tscn<>uid://rq03fvmly2tp::::res://Scenes/Projectiles/Enemy/enemy_plasma_bullet.tscn<>uid://cdco2wpi5fuj::::res://Graphics/Sprites/Enemies/Common/ship10.png
+boss_3.tscn::PackedScene::5733306506555154260::1686563920::0::1::::<><>::uid://b6m3mwm3raowl<>res://Scripts/Enemies/Bosses/boss_3.gd<>uid://dqeg6nglrun74<>uid://bnwm7aeciu8oh<>uid://bmxn61ymtfi1d<>uid://bl5x4iw6kho3a
+boss_4.tscn::PackedScene::2654180163215690366::1686565460::0::1::::<><>::uid://b6m3mwm3raowl::::res://Scenes/Enemies/boss.tscn<>res://Scripts/Enemies/Bosses/boss_4.gd<>uid://cyxslsmmo14g2::::res://Scenes/Projectiles/Enemy/Bosses/boss_4_bullet_1.tscn<>uid://otv26gedjt56::::res://Scenes/Projectiles/Enemy/Bosses/boss_4_bullet_2.tscn<>uid://fj3lb2bqnld2::::res://Scenes/Projectiles/Enemy/Bosses/boss_4_bullet_3.tscn<>uid://dieywh0ltowij::::res://Graphics/Sprites/Enemies/Common/ship7.png
+boss_5.tscn::PackedScene::1082383608692139886::1734272612::0::1::::<><>::uid://b6m3mwm3raowl::::res://Scenes/Enemies/boss.tscn<>res://Scripts/Enemies/Bosses/boss_5.gd<>uid://82af83wp702l::::res://Scenes/Projectiles/Enemy/Bosses/boss_5_bullet_1.tscn<>uid://dog8gfan7xean::::res://Scenes/Projectiles/Enemy/Bosses/boss_5_bullet_2.tscn<>uid://d1hjuwhekoptn::::res://Scenes/Projectiles/Enemy/Bosses/boss_5_bullet_3.tscn<>uid://dl1qrcnlkakap::::res://Graphics/Sprites/Enemies/Common/ship8.png
+::res://Scenes/Enemies/Common/::1734272612
+bouncer_enemy.tscn::PackedScene::9047962593266234228::1685313124::0::1::::<><>::uid://dk3omodqaadkk::::res://Scenes/Enemies/Common/shooter_enemy.tscn<>res://Scripts/Enemies/Common/bouncer_enemy.gd
+double_shooter_enemy.tscn::PackedScene::8401223300050755259::1686494616::0::1::::<><>::uid://bk5e74ilh2oaw<>res://Scripts/Enemies/Common/shooter_enemy.gd<>uid://rq03fvmly2tp<>uid://7kngmovtg4gd
+fast_enemy.tscn::PackedScene::4950775292472678766::1686493856::0::1::::<><>::uid://bk5e74ilh2oaw::::res://Scenes/Enemies/enemy.tscn<>uid://rphtgerekgte::::res://Graphics/Sprites/Enemies/Common/ship5.png
+shooter_enemy.tscn::PackedScene::7919825272687175850::1734272612::0::1::::<><>::uid://bk5e74ilh2oaw::::res://Scenes/Enemies/enemy.tscn<>res://Scripts/Enemies/Common/shooter_enemy.gd<>uid://rq03fvmly2tp::::res://Scenes/Projectiles/Enemy/enemy_plasma_bullet.tscn<>uid://dtlq8plqg0tiv::::res://Graphics/Sprites/Enemies/Common/ship6.png
+sinusoid_double_shooter_enemy.tscn::PackedScene::5693250379185011457::1683992984::0::1::::<><>::uid://drxu6j5f0hbcl::::res://Scenes/Enemies/Common/double_shooter_enemy.tscn<>res://Scripts/Enemies/Common/sinusoid_double_shooter_enemy.gd
+::res://Scenes/Enemies/MiniBosses/::1686495660
+quad_shot_mini.tscn::PackedScene::5905424257248375829::1686495660::0::1::::<><>::uid://cef5xhcjskw60<>res://Scripts/Enemies/MiniBosses/quad_shot_mini_boss.gd<>uid://cpwp7pth4rybd<>uid://crwxidtymesvp
+triple_shot_mini.tscn::PackedScene::6746387831203245253::1686495354::0::1::::<><>::uid://cef5xhcjskw60<>res://Scripts/Enemies/MiniBosses/triple_shot_mini_boss.gd<>uid://rq03fvmly2tp<>uid://dl5c41abdjw0a
+::res://Scenes/Projectiles/::1734272612
+buffed_bullet.tscn::PackedScene::2964981803578047655::1687544440::0::1::::<><>::res://Scripts/bullet.gd<>uid://bdaatf5qloj4c<>uid://c2n6s7vrc83xy
+bullet.tscn::PackedScene::2140392781510067926::1734272612::0::1::::<><>::res://Scripts/bullet.gd<>uid://bdaatf5qloj4c::::res://Graphics/Sprites/Projectiles/Player/Projectile Example.png<>uid://c2n6s7vrc83xy::::res://Sounds/SFX/DirectLaserAttack.wav
+::res://Scenes/Projectiles/Enemy/::1687554154
+enemy_plasma_bullet.tscn::PackedScene::1227808608578549041::1687554154::0::1::::<><>::uid://5q27rugvtwgk::::res://Scenes/Projectiles/bullet.tscn<>uid://d0nrf3oyerjg::::res://Graphics/Sprites/Projectiles/Enemy/enemy_plasma.png<>res://Scripts/Projectiles/Enemy/enemy_plasma_bullet.gd<>uid://ctu7av5ttju6x::::res://Sounds/SFX/MiniShot2.wav
+::res://Scenes/Projectiles/Enemy/Bosses/::1687543906
+boss_1_bullet_1.tscn::PackedScene::7392717995183365855::1684953054::0::1::::<><>::uid://rq03fvmly2tp<>uid://d3o30ioeq5qdn
+boss_1_bullet_2.tscn::PackedScene::4680656212635498195::1687543656::0::1::::<><>::uid://rq03fvmly2tp<>uid://cylo23bh0j2go<>uid://dtqf1ag8v0oas
+boss_1_bullet_3.tscn::PackedScene::872430480316593557::1687543704::0::1::::<><>::uid://rq03fvmly2tp<>uid://duya3g1rql241<>uid://cpodfi57b2pns
+boss_1_bullet_4.tscn::PackedScene::359983460868755098::1687543742::0::1::::<><>::uid://rq03fvmly2tp::::res://Scenes/Projectiles/Enemy/enemy_plasma_bullet.tscn<>res://Scripts/Projectiles/Enemy/Bosses/boss_1_bullet_4.gd<>uid://cylo23bh0j2go::::res://Graphics/Sprites/Projectiles/Enemy/Bosses/Boss1Attack2.png<>uid://dtqf1ag8v0oas::::res://Sounds/SFX/RocketMini.wav
+boss_2_bullet_1.tscn::PackedScene::2513450141395956287::1686511872::0::1::::<><>::uid://rq03fvmly2tp<>uid://d3o30ioeq5qdn
+boss_2_bullet_2.tscn::PackedScene::5991580245110105926::1687543770::0::1::::<><>::uid://rq03fvmly2tp::::res://Scenes/Projectiles/Enemy/enemy_plasma_bullet.tscn<>uid://duya3g1rql241::::res://Graphics/Sprites/Projectiles/Enemy/Bosses/Boss1Attack3.png<>uid://cpodfi57b2pns::::res://Sounds/SFX/FunkyLaserAttack.wav
+boss_3_bullet_1.tscn::PackedScene::8290961414467398945::1686562526::0::1::::<><>::uid://rq03fvmly2tp::::res://Scenes/Projectiles/Enemy/enemy_plasma_bullet.tscn<>uid://d3o30ioeq5qdn::::res://Graphics/Sprites/Projectiles/Enemy/Bosses/Boss1Attack1.png
+boss_3_bullet_2.tscn::PackedScene::3345077717176595271::1687543792::0::1::::<><>::uid://rq03fvmly2tp<>uid://duya3g1rql241<>uid://cpodfi57b2pns
+boss_3_bullet_3.tscn::PackedScene::3277013579463112175::1687543848::0::1::::<><>::uid://rq03fvmly2tp::::res://Scenes/Projectiles/Enemy/enemy_plasma_bullet.tscn<>uid://boxuqtbldklog::::res://Graphics/Sprites/Projectiles/Enemy/Bosses/Boss3Attack3.png<>uid://cko4tjb5j4lsn::::res://Sounds/SFX/LaserAttackMini.wav
+boss_4_bullet_1.tscn::PackedScene::6505967817168049419::1686564404::0::1::::<><>::uid://rq03fvmly2tp<>uid://d3o30ioeq5qdn
+boss_4_bullet_2.tscn::PackedScene::1023191899221925471::1686564648::0::1::::<><>::uid://rq03fvmly2tp::::res://Scenes/Projectiles/Enemy/enemy_plasma_bullet.tscn<>uid://d3o30ioeq5qdn::::res://Graphics/Sprites/Projectiles/Enemy/Bosses/Boss1Attack1.png
+boss_4_bullet_3.tscn::PackedScene::371243431807524725::1687543880::0::1::::<><>::uid://rq03fvmly2tp::::res://Scenes/Projectiles/Enemy/enemy_plasma_bullet.tscn<>uid://duya3g1rql241::::res://Graphics/Sprites/Projectiles/Enemy/Bosses/Boss1Attack3.png<>uid://cpodfi57b2pns::::res://Sounds/SFX/FunkyLaserAttack.wav
+boss_5_bullet_1.tscn::PackedScene::2371980745930197429::1684957346::0::1::::<><>::uid://rq03fvmly2tp<>uid://d3o30ioeq5qdn
+boss_5_bullet_2.tscn::PackedScene::8156306767311920501::1687541020::0::1::::<><>::uid://rq03fvmly2tp<>uid://d3o30ioeq5qdn
+boss_5_bullet_3.tscn::PackedScene::8999205965282567071::1687543906::0::1::::<><>::uid://rq03fvmly2tp<>uid://duya3g1rql241<>uid://cpodfi57b2pns
+::res://Scenes/Projectiles/Enemy/MiniBosses/::1684958158
+quad_shot_mini_boss_bullet_1.tscn::PackedScene::5872059050401490301::1684958158::0::1::::<><>::uid://rq03fvmly2tp<>uid://d3o30ioeq5qdn
+::res://Scenes/UI/::1734272612
+battle_ui.tscn::PackedScene::1153173955418781906::1734272612::0::1::::<><>::uid://c20xqkyolr30x::::res://Scenes/UI/boss_ui.tscn<>uid://b2ibt5v8ami7q::::res://Scenes/UI/health_bar.tscn<>uid://cqelc0pblixr7::::res://Graphics/Sprites/Icons/Speed Icon.png<>res://Scripts/UI/bonus_indicator.gd
+boss_test_ui.tscn::PackedScene::1474019930448178064::1685360286::0::1::::<><>::res://Scripts/UI/boss_test_ui.gd<>uid://fjekkg6gu2q0
+boss_ui.tscn::PackedScene::6720975215960982353::1686496782::0::1::::<><>::res://Scripts/UI/boss_ui.gd<>uid://fjekkg6gu2q0::::res://Scenes/UI/health_bar_boss.tscn
+enemy_test_ui.tscn::PackedScene::7053197440880262484::1685360326::0::1::::<><>::uid://b2ibt5v8ami7q<>uid://vaa5mgpblt1i
+health_bar.tscn::PackedScene::4298130740670661168::1686496782::0::1::::<><>::res://Scripts/UI/health_bar.gd
+health_bar_boss.tscn::PackedScene::369784879806476677::1686496784::0::1::::<><>::
+::res://Scenes/Weapons/::1686496782
+plasma_gun.tscn::PackedScene::2297878504515298809::1686496782::0::1::::<><>::res://Scripts/Weapons/plasma_gun.gd<>uid://5q27rugvtwgk::::res://Scenes/Projectiles/bullet.tscn<>uid://biii21t6c2wjf::::res://Scenes/Projectiles/buffed_bullet.tscn
+::res://Scripts/::1687560474
+BattleWonUI.gd::GDScript::-1::1686481096::0::1::::<>Control<>::
+blinker.gd::GDScript::-1::1681831844::0::1::::<>Node<>::
+bullet.gd::GDScript::-1::1684832908::0::1::::<>Area2D<>::
+EnemyTracker.gd::GDScript::-1::1685192796::0::1::::<>Node2D<>::
+enemy_test_mode.gd::GDScript::-1::1685358860::0::1::::<>Node<>::
+item_detector.gd::GDScript::-1::1685978872::0::1::::<>Area2D<>::
+main_menu.gd::GDScript::-1::1687559622::0::1::::<>Node<>::
+MapGenerator.gd::GDScript::-1::1687560474::0::1::::<>Node2D<>::
+MasterSoundSlider.gd::GDScript::-1::1687559154::0::1::::<>HSlider<>::
+MusicSlider.gd::GDScript::-1::1687559216::0::1::::<>HSlider<>::
+player_controller.gd::GDScript::-1::1685988782::0::1::::Player<>CharacterBody2D<>::
+SFXSlider.gd::GDScript::-1::1687559240::0::1::::<>HSlider<>::
+Spawner.gd::GDScript::-1::1687546358::0::1::::<>Node2D<>::
+star.gd::GDScript::-1::1687541018::0::1::::<>Area2D<>::
+::res://Scripts/Bonuses/::1685987968
+attack_bonus.gd::GDScript::-1::1685987968::0::1::::<>Area2D<>::
+speed_bonus.gd::GDScript::-1::1685978484::0::1::::<>Area2D<>::
+::res://Scripts/Enemies/::1734272223
+asteroid.gd::GDScript::-1::1685975124::0::1::::<>Enemy<>::
+boss.gd::GDScript::-1::1734272223::0::1::::Boss<>MiniBoss<>::
+enemy.gd::GDScript::-1::1687542566::0::1::::Enemy<>Area2D<>::
+mini_boss.gd::GDScript::-1::1685525304::0::1::::MiniBoss<>Enemy<>::
+::res://Scripts/Enemies/Bosses/::1685368226
+boss_1.gd::GDScript::-1::1685365022::0::1::::<>Boss<>::
+boss_2.gd::GDScript::-1::1685366022::0::1::::<>Boss<>::
+boss_3.gd::GDScript::-1::1685366982::0::1::::<>Boss<>::
+boss_4.gd::GDScript::-1::1685367726::0::1::::<>Boss<>::
+boss_5.gd::GDScript::-1::1685368226::0::1::::<>Boss<>::
+::res://Scripts/Enemies/Common/::1687543550
+bouncer_enemy.gd::GDScript::-1::1685519124::0::1::::<>ShooterEnemy<>::
+shooter_enemy.gd::GDScript::-1::1687543550::0::1::::ShooterEnemy<>Enemy<>::
+sinusoid_double_shooter_enemy.gd::GDScript::-1::1684425740::0::1::::SinusoidDoubleShooterEnemy<>Enemy<>::
+::res://Scripts/Enemies/MiniBosses/::1685020658
+quad_shot_mini_boss.gd::GDScript::-1::1685020658::0::1::::<>MiniBoss<>::
+triple_shot_mini_boss.gd::GDScript::-1::1684958062::0::1::::<>MiniBoss<>::
+::res://Scripts/Projectiles/::1682333904
+::res://Scripts/Projectiles/Enemy/::1685357834
+enemy_plasma_bullet.gd::GDScript::-1::1685357778::0::1::::EnemyPlasmaBullet<>Area2D<>::
+::res://Scripts/Projectiles/Enemy/Bosses/::1685371968
+boss_1_bullet_4.gd::GDScript::-1::1685371968::0::1::::<>Area2D<>::
+::res://Scripts/UI/::1686565730
+bonus_indicator.gd::GDScript::-1::1685987072::0::1::::<>Control<>::
+boss_test_ui.gd::GDScript::-1::1686565730::0::1::::<>Control<>::
+boss_ui.gd::GDScript::-1::1685361600::0::1::::<>Control<>::
+health_bar.gd::GDScript::-1::1685986504::0::1::::<>Panel<>::
+::res://Scripts/Weapons/::1685988604
+plasma_gun.gd::GDScript::-1::1685988604::0::1::::<>Node2D<>::
+::res://Shaders/::1734272223
+flash_red2.tres::ShaderMaterial::4579415962384151446::1734272223::0::1::::<><>::res://Shaders/flash_red.gdshader
+flash_red.gdshader::Shader::-1::1734272223::0::1::::<><>::
+flash_red.tres::Shader::6183659039832615039::1685527140::0::1::::<><>::
+flash_white.gdshader::Shader::-1::1681832726::0::1::::<><>::
+flash_white.tres::Shader::57356404211191469::1734272223::0::1::::<><>::
+::res://Sounds/::1687543120
+::res://Sounds/Music/::1734271915
+loading.wav::AudioStreamWAV::632340649297649201::1687553974::1734271915::1::::<><>::
+Ludum Dare 30 - Track 9.wav::AudioStreamWAV::7478578724136955404::1687545794::1734271915::1::::<><>::
+menu.wav::AudioStreamWAV::3617033116147697531::1687553980::1734271915::1::::<><>::
+::res://Sounds/SFX/::1734271915
+DirectLaserAttack.wav::AudioStreamWAV::6696693141446404510::1687543392::1734271915::1::::<><>::
+FunkyLaserAttack.wav::AudioStreamWAV::5854766858448631152::1687543288::1734271915::1::::<><>::
+LaserAttackMini.wav::AudioStreamWAV::5505426290828981909::1687543314::1734271915::1::::<><>::
+LaserShot.wav::AudioStreamWAV::4592514505563648226::1687543128::1734271915::1::::<><>::
+MiniShot2.wav::AudioStreamWAV::6149661045582066653::1687543378::1734271915::1::::<><>::
+MiniShot3.wav::AudioStreamWAV::6054875164258099465::1687543342::1734271915::1::::<><>::
+MiniShot4.wav::AudioStreamWAV::7189412457447804104::1687543330::1687543330::1::::<><>::
+MissileLaunchFast.wav::AudioStreamWAV::8523829354619771244::1687543178::1687543178::1::::<><>::
+RocketMini.wav::AudioStreamWAV::8526230150669491842::1687543210::1734271915::1::::<><>::
+SingleShot4.wav::AudioStreamWAV::3606114721612761710::1687543226::1734271915::1::::<><>::
+SingleShot.wav::AudioStreamWAV::5114511353376271356::1687543300::1687543300::1::::<><>::
+SpaceGunFire.wav::AudioStreamWAV::2442080437455550459::1687543192::1734271915::1::::<><>::
+::res://Stages/::1734272612
+battle_mode.tscn::PackedScene::347159451613833684::1734272611::0::1::::<><>::uid://cgdoy6fay4f0w::::res://Scenes/player.tscn<>uid://qouuvgosrb0u::::res://Scenes/UI/battle_ui.tscn<>uid://fbptdf1qui0x::::res://Graphics/Backgrounds/space background1.jpg<>res://Scripts/BattleWonUI.gd<>res://Scripts/Spawner.gd
+enemy_test_mode.tscn::PackedScene::5164348389834449344::1734272611::0::1::::<><>::res://Scripts/enemy_test_mode.gd<>uid://cgdoy6fay4f0w::::res://Scenes/player.tscn<>uid://c7qvep4hprjp1::::res://Scenes/UI/enemy_test_ui.tscn<>uid://pokx2c0qai6q::::res://Scenes/Enemies/Bosses/boss_5.tscn
+main_menu.tscn::PackedScene::3147828833120447632::1734272612::0::1::::<><>::res://Scripts/main_menu.gd<>res://Scripts/MasterSoundSlider.gd<>uid://fbptdf1qui0x::::res://Graphics/Backgrounds/space background1.jpg<>res://Scripts/MusicSlider.gd<>res://Scripts/SFXSlider.gd
+MapPlayer.gd::GDScript::-1::1685512166::0::1::::<>Node2D<>::
+map_mode.tscn::PackedScene::8800283885888429258::1734272611::0::1::::<><>::uid://fbptdf1qui0x::::res://Graphics/Backgrounds/space background1.jpg<>res://Scripts/EnemyTracker.gd<>res://Scripts/MapGenerator.gd<>uid://c7r1h47f0yain::::res://Scenes/star.tscn<>res://Stages/MapPlayer.gd

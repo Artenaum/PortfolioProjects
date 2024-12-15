@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://dxm6nixf8ojju"]
+
+[ext_resource type="Texture2D" uid="uid://fbptdf1qui0x" path="res://Graphics/Backgrounds/space background1.jpg" id="1_mvwvk"]
+[ext_resource type="Script" path="res://Scripts/EnemyTracker.gd" id="1_oko5y"]
+[ext_resource type="Script" path="res://Scripts/MapGenerator.gd" id="2_7joiw"]
+[ext_resource type="PackedScene" uid="uid://c7r1h47f0yain" path="res://Scenes/star.tscn" id="3_pnmep"]
+[ext_resource type="Script" path="res://Stages/MapPlayer.gd" id="4_bh2ff"]
+
+[node name="MapMode" type="Node"]
+
+[node name="Background" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+mouse_force_pass_scroll_events = false
+texture = ExtResource("1_mvwvk")
+stretch_mode = 1
+
+[node name="EnemyTracker" type="Node2D" parent="."]
+script = ExtResource("1_oko5y")
+
+[node name="MapGenerator" type="Node2D" parent="."]
+script = ExtResource("2_7joiw")
+system_scene = ExtResource("3_pnmep")
+
+[node name="MapPlayer" type="Node2D" parent="."]
+script = ExtResource("4_bh2ff")

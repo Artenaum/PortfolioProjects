@@ -1,0 +1,12 @@
+[gd_scene load_steps=4 format=3 uid="uid://70dyucoqq33r"]
+
+[ext_resource type="Script" path="res://Scripts/Weapons/plasma_gun.gd" id="1_6jkf6"]
+[ext_resource type="PackedScene" uid="uid://5q27rugvtwgk" path="res://Scenes/Projectiles/bullet.tscn" id="2_obmm8"]
+[ext_resource type="PackedScene" uid="uid://biii21t6c2wjf" path="res://Scenes/Projectiles/buffed_bullet.tscn" id="3_fjm1o"]
+
+[node name="PlasmaGun" type="Node2D"]
+script = ExtResource("1_6jkf6")
+bullet_scene = ExtResource("2_obmm8")
+buffed_bullet_scene = ExtResource("3_fjm1o")
+
+[node name="Timer" type="Timer" parent="."]

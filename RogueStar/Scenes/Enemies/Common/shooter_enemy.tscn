@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://dk3omodqaadkk"]
+
+[ext_resource type="PackedScene" uid="uid://bk5e74ilh2oaw" path="res://Scenes/Enemies/enemy.tscn" id="1_27lar"]
+[ext_resource type="Script" path="res://Scripts/Enemies/Common/shooter_enemy.gd" id="2_qvwtl"]
+[ext_resource type="PackedScene" uid="uid://rq03fvmly2tp" path="res://Scenes/Projectiles/Enemy/enemy_plasma_bullet.tscn" id="3_s0myy"]
+[ext_resource type="Texture2D" uid="uid://dtlq8plqg0tiv" path="res://Graphics/Sprites/Enemies/Common/ship6.png" id="4_xhroc"]
+
+[node name="ShooterEnemy" instance=ExtResource("1_27lar")]
+script = ExtResource("2_qvwtl")
+fireRate = 1.0
+bullet_scene = ExtResource("3_s0myy")
+speed = 300.0
+maxHealth = 10
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" parent="." index="1"]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("4_xhroc")
+
+[node name="ProjectileSpawnPos" type="Node2D" parent="FiringPositions" index="0"]
+position = Vector2(0, -160)
+
+[node name="FireTimer" type="Timer" parent="." index="3"]
+one_shot = true

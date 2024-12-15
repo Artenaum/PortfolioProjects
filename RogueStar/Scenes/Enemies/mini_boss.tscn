@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cef5xhcjskw60"]
+
+[ext_resource type="PackedScene" uid="uid://bk5e74ilh2oaw" path="res://Scenes/Enemies/enemy.tscn" id="1_ej7gh"]
+[ext_resource type="Script" path="res://Scripts/Enemies/mini_boss.gd" id="2_sa0ua"]
+
+[node name="MiniBoss" instance=ExtResource("1_ej7gh")]
+script = ExtResource("2_sa0ua")
+bullets = Array[PackedScene]([])
+frequency = 5.0
+amplitude = 300
+verticalSpeed = 50.0

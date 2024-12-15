@@ -1,0 +1,54 @@
+[gd_scene load_steps=8 format=3 uid="uid://f14c1act3146"]
+
+[ext_resource type="PackedScene" uid="uid://b6m3mwm3raowl" path="res://Scenes/Enemies/boss.tscn" id="1_3nj41"]
+[ext_resource type="Script" path="res://Scripts/Enemies/Bosses/boss_1.gd" id="2_flfw8"]
+[ext_resource type="PackedScene" uid="uid://ddlc8q8451wwl" path="res://Scenes/Projectiles/Enemy/Bosses/boss_1_bullet_1.tscn" id="3_bnxlj"]
+[ext_resource type="PackedScene" uid="uid://b7xlyu550f40v" path="res://Scenes/Projectiles/Enemy/Bosses/boss_1_bullet_2.tscn" id="4_iboy0"]
+[ext_resource type="PackedScene" uid="uid://mou2j0ku7fnh" path="res://Scenes/Projectiles/Enemy/Bosses/boss_1_bullet_3.tscn" id="5_i3g42"]
+[ext_resource type="PackedScene" uid="uid://fem40rimyuak" path="res://Scenes/Projectiles/Enemy/Bosses/boss_1_bullet_4.tscn" id="6_exrs4"]
+[ext_resource type="Texture2D" uid="uid://cdyrp15kv3cf7" path="res://Graphics/Sprites/Enemies/Common/ship9.png" id="7_ev3id"]
+
+[node name="Boss1" instance=ExtResource("1_3nj41")]
+script = ExtResource("2_flfw8")
+fireRate = 3.0
+attack1FireRate = 0.5
+attack2FireRate = 0.5
+attack3FireRate = 0.01
+bullets = Array[PackedScene]([ExtResource("3_bnxlj"), ExtResource("4_iboy0"), ExtResource("4_iboy0"), ExtResource("5_i3g42"), ExtResource("6_exrs4"), ExtResource("6_exrs4")])
+maxHealth = 500
+health = 0
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" parent="." index="1"]
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("7_ev3id")
+
+[node name="ProjectileSpawnPos1" type="Node2D" parent="FiringPositions" index="0"]
+position = Vector2(0, -152)
+
+[node name="ProjectileSpawnPos2" type="Node2D" parent="FiringPositions" index="1"]
+position = Vector2(104, 56)
+
+[node name="ProjectileSpawnPos3" type="Node2D" parent="FiringPositions" index="2"]
+position = Vector2(-104, 56)
+
+[node name="ProjectileSpawnPos4" type="Node2D" parent="FiringPositions" index="3"]
+position = Vector2(0, -152)
+
+[node name="ProjectileSpawnPos5" type="Node2D" parent="FiringPositions" index="4"]
+position = Vector2(104, 56)
+
+[node name="ProjectileSpawnPos6" type="Node2D" parent="FiringPositions" index="5"]
+position = Vector2(-104, 56)
+
+[node name="FireTimer" type="Timer" parent="." index="3"]
+one_shot = true
+
+[node name="Attack1Timer" type="Timer" parent="." index="4"]
+one_shot = true
+
+[node name="Attack2Timer" type="Timer" parent="." index="5"]
+one_shot = true
+
+[node name="Attack3Timer" type="Timer" parent="." index="6"]
+one_shot = true

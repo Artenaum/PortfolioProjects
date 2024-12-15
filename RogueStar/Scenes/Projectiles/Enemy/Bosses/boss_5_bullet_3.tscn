@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://d1hjuwhekoptn"]
+
+[ext_resource type="PackedScene" uid="uid://rq03fvmly2tp" path="res://Scenes/Projectiles/Enemy/enemy_plasma_bullet.tscn" id="1_t08qi"]
+[ext_resource type="Texture2D" uid="uid://duya3g1rql241" path="res://Graphics/Sprites/Projectiles/Enemy/Bosses/Boss1Attack3.png" id="2_428t8"]
+[ext_resource type="AudioStream" uid="uid://cpodfi57b2pns" path="res://Sounds/SFX/FunkyLaserAttack.wav" id="3_n7fym"]
+
+[node name="Boss5Bullet3" instance=ExtResource("1_t08qi")]
+scale = Vector2(2, 2)
+speed = 1000.0
+damage = 5
+
+[node name="Sprite2D" parent="." index="0"]
+texture_filter = 1
+scale = Vector2(1, 1)
+texture = ExtResource("2_428t8")
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(0, 0)
+
+[node name="VisibleOnScreenNotifier2D" parent="." index="2"]
+position = Vector2(0, 4.17233e-07)
+
+[node name="AudioStreamPlayer" parent="." index="3"]
+stream = ExtResource("3_n7fym")

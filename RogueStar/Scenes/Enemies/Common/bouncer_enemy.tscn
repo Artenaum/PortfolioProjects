@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://d155vfat55fi7"]
+
+[ext_resource type="PackedScene" uid="uid://dk3omodqaadkk" path="res://Scenes/Enemies/Common/shooter_enemy.tscn" id="1_5oqdk"]
+[ext_resource type="Script" path="res://Scripts/Enemies/Common/bouncer_enemy.gd" id="2_fa88f"]
+
+[node name="BouncerEnemy" instance=ExtResource("1_5oqdk")]
+script = ExtResource("2_fa88f")
+verticalSpeed = 500

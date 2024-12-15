@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://drxu6j5f0hbcl"]
+
+[ext_resource type="PackedScene" uid="uid://bk5e74ilh2oaw" path="res://Scenes/Enemies/enemy.tscn" id="1_6h5kr"]
+[ext_resource type="Script" path="res://Scripts/Enemies/Common/shooter_enemy.gd" id="2_i6ncs"]
+[ext_resource type="PackedScene" uid="uid://rq03fvmly2tp" path="res://Scenes/Projectiles/Enemy/enemy_plasma_bullet.tscn" id="3_yh0ji"]
+[ext_resource type="Texture2D" uid="uid://7kngmovtg4gd" path="res://Graphics/Sprites/Enemies/Common/ship1_example.png" id="4_oqfjf"]
+
+[node name="DoubleShooterEnemy" instance=ExtResource("1_6h5kr")]
+script = ExtResource("2_i6ncs")
+fireRate = 1.0
+bullet_scene = ExtResource("3_yh0ji")
+speed = 300.0
+maxHealth = 10
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" parent="." index="1"]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("4_oqfjf")
+
+[node name="ProjectileSpawnPos" type="Node2D" parent="FiringPositions" index="0"]
+position = Vector2(56, -24)
+
+[node name="ProjectileSpawnPos2" type="Node2D" parent="FiringPositions" index="1"]
+position = Vector2(-56, -24)
+
+[node name="FireTimer" type="Timer" parent="." index="3"]
+one_shot = true

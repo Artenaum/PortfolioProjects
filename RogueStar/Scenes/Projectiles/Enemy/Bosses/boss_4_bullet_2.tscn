@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://otv26gedjt56"]
+
+[ext_resource type="PackedScene" uid="uid://rq03fvmly2tp" path="res://Scenes/Projectiles/Enemy/enemy_plasma_bullet.tscn" id="1_os2xw"]
+[ext_resource type="Texture2D" uid="uid://d3o30ioeq5qdn" path="res://Graphics/Sprites/Projectiles/Enemy/Bosses/Boss1Attack1.png" id="2_ln1iw"]
+
+[node name="Boss4Bullet2" instance=ExtResource("1_os2xw")]
+scale = Vector2(2, 2)
+speed = 300.0
+damage = 4
+
+[node name="Sprite2D" parent="." index="0"]
+texture_filter = 1
+scale = Vector2(1, 1)
+texture = ExtResource("2_ln1iw")
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(0, 0)
+
+[node name="VisibleOnScreenNotifier2D" parent="." index="2"]
+position = Vector2(5.68434e-14, 2.84217e-14)

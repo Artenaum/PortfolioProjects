@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=3 uid="uid://bd2x7vgqscma5"]
+
+[ext_resource type="PackedScene" uid="uid://b6m3mwm3raowl" path="res://Scenes/Enemies/boss.tscn" id="1_gwfy5"]
+[ext_resource type="Script" path="res://Scripts/Enemies/Bosses/boss_4.gd" id="2_2vcre"]
+[ext_resource type="PackedScene" uid="uid://cyxslsmmo14g2" path="res://Scenes/Projectiles/Enemy/Bosses/boss_4_bullet_1.tscn" id="3_oth3d"]
+[ext_resource type="PackedScene" uid="uid://otv26gedjt56" path="res://Scenes/Projectiles/Enemy/Bosses/boss_4_bullet_2.tscn" id="4_4w0qp"]
+[ext_resource type="PackedScene" uid="uid://fj3lb2bqnld2" path="res://Scenes/Projectiles/Enemy/Bosses/boss_4_bullet_3.tscn" id="5_vpdk5"]
+[ext_resource type="Texture2D" uid="uid://dieywh0ltowij" path="res://Graphics/Sprites/Enemies/Common/ship7.png" id="6_tndhj"]
+
+[node name="Boss4" instance=ExtResource("1_gwfy5")]
+script = ExtResource("2_2vcre")
+fireRate = 3.0
+attack1FireRate = 0.01
+attack2FireRate = 0.01
+attack2FireRate2 = 0.3
+bullets = Array[PackedScene]([ExtResource("3_oth3d"), ExtResource("4_4w0qp"), ExtResource("4_4w0qp"), ExtResource("5_vpdk5"), ExtResource("5_vpdk5")])
+frequency = 5.0
+maxHealth = 500
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" parent="." index="1"]
+position = Vector2(8, 0)
+rotation = 3.14159
+texture = ExtResource("6_tndhj")
+
+[node name="ProjectileSpawnPos1" type="Node2D" parent="FiringPositions" index="0"]
+
+[node name="ProjectileSpawnPos2" type="Node2D" parent="FiringPositions" index="1"]
+position = Vector2(64, -128)
+
+[node name="ProjectileSpawnPos3" type="Node2D" parent="FiringPositions" index="2"]
+position = Vector2(-64, -128)
+
+[node name="ProjectileSpawnPos4" type="Node2D" parent="FiringPositions" index="3"]
+position = Vector2(-64, -128)
+
+[node name="ProjectileSpawnPos5" type="Node2D" parent="FiringPositions" index="4"]
+position = Vector2(64, -128)
+
+[node name="FireTimer" type="Timer" parent="." index="3"]
+one_shot = true
+
+[node name="Attack1Timer" type="Timer" parent="." index="4"]
+one_shot = true
+
+[node name="Attack2Timer" type="Timer" parent="." index="5"]
+one_shot = true
+
+[node name="Attack2Timer2" type="Timer" parent="." index="6"]
+one_shot = true
+
+[node name="Attack3Timer" type="Timer" parent="." index="7"]
+one_shot = true

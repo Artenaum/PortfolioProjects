@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://fem40rimyuak"]
+
+[ext_resource type="PackedScene" uid="uid://rq03fvmly2tp" path="res://Scenes/Projectiles/Enemy/enemy_plasma_bullet.tscn" id="1_1a6md"]
+[ext_resource type="Script" path="res://Scripts/Projectiles/Enemy/Bosses/boss_1_bullet_4.gd" id="2_dig6m"]
+[ext_resource type="Texture2D" uid="uid://cylo23bh0j2go" path="res://Graphics/Sprites/Projectiles/Enemy/Bosses/Boss1Attack2.png" id="2_dyadi"]
+[ext_resource type="AudioStream" uid="uid://dtqf1ag8v0oas" path="res://Sounds/SFX/RocketMini.wav" id="4_t4k1e"]
+
+[node name="Boss1Bullet4" instance=ExtResource("1_1a6md")]
+script = ExtResource("2_dig6m")
+speed = 400.0
+damage = 2
+steeringForce = 1000.0
+
+[node name="Sprite2D" parent="." index="0"]
+texture_filter = 1
+scale = Vector2(1, 1)
+texture = ExtResource("2_dyadi")
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(0, 0)
+
+[node name="VisibleOnScreenNotifier2D" parent="." index="2"]
+position = Vector2(2.38419e-06, 4.17233e-07)
+scale = Vector2(2.4, 0.8)
+
+[node name="AudioStreamPlayer" parent="." index="3"]
+stream = ExtResource("4_t4k1e")

@@ -1,0 +1,17 @@
+[gd_scene load_steps=6 format=3 uid="uid://cmkw33ayu4boh"]
+
+[ext_resource type="PackedScene" uid="uid://bk5e74ilh2oaw" path="res://Scenes/Enemies/enemy.tscn" id="1_a2sd3"]
+[ext_resource type="Script" path="res://Scripts/Enemies/asteroid.gd" id="2_02cok"]
+[ext_resource type="Texture2D" uid="uid://dmwlw1iuans5n" path="res://Graphics/Sprites/asteroid1.png" id="2_5dhce"]
+[ext_resource type="PackedScene" uid="uid://bpmku68thf7h7" path="res://Scenes/Bonuses/speed_bonus.tscn" id="3_j6buv"]
+[ext_resource type="PackedScene" uid="uid://cilpvq1ws1xpy" path="res://Scenes/Bonuses/attack_bonus.tscn" id="4_okns7"]
+
+[node name="Asteroid" instance=ExtResource("1_a2sd3")]
+script = ExtResource("2_02cok")
+bonuses = Array[PackedScene]([ExtResource("3_j6buv"), ExtResource("4_okns7")])
+speed = 600.0
+maxHealth = 20
+health = 20
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_5dhce")

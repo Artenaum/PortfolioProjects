@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://ccsgss5e8en1w"]
+
+[ext_resource type="PackedScene" uid="uid://bk5e74ilh2oaw" path="res://Scenes/Enemies/enemy.tscn" id="1_alyht"]
+[ext_resource type="Texture2D" uid="uid://rphtgerekgte" path="res://Graphics/Sprites/Enemies/Common/ship5.png" id="2_kgq2v"]
+
+[node name="FastEnemy" instance=ExtResource("1_alyht")]
+speed = 500.0
+maxHealth = 10
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" parent="." index="1"]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_kgq2v")

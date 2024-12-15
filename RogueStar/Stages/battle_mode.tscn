@@ -1,0 +1,303 @@
+[gd_scene load_steps=14 format=3 uid="uid://e7fwvi0naeka"]
+
+[ext_resource type="PackedScene" uid="uid://cgdoy6fay4f0w" path="res://Scenes/player.tscn" id="1_2l8wq"]
+[ext_resource type="PackedScene" uid="uid://qouuvgosrb0u" path="res://Scenes/UI/battle_ui.tscn" id="1_dppqm"]
+[ext_resource type="Texture2D" uid="uid://fbptdf1qui0x" path="res://Graphics/Backgrounds/space background1.jpg" id="1_ux4yo"]
+[ext_resource type="Script" path="res://Scripts/BattleWonUI.gd" id="5_uuo61"]
+[ext_resource type="Script" path="res://Scripts/Spawner.gd" id="8_auyod"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bxn61"]
+bg_color = Color(0, 0, 0, 0.588235)
+
+[sub_resource type="LabelSettings" id="LabelSettings_uvi3i"]
+font_size = 64
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5iw6l"]
+bg_color = Color(0, 0.784314, 1, 0.392157)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0.784314, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_s2olj"]
+font_size = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_357il"]
+bg_color = Color(0, 0.784314, 1, 0.392157)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1vehy"]
+bg_color = Color(0, 0.784314, 1, 0.784314)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q6evv"]
+bg_color = Color(0, 0.784314, 1, 0.392157)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1vo6g"]
+bg_color = Color(0, 0.784314, 1, 0.392157)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="Battle Mode" type="Node"]
+
+[node name="Background" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ux4yo")
+
+[node name="BattleUI" parent="." instance=ExtResource("1_dppqm")]
+z_index = 1000
+z_as_relative = false
+
+[node name="Player" parent="." instance=ExtResource("1_2l8wq")]
+z_index = 2
+position = Vector2(131, 528)
+rotation = 1.5708
+scale = Vector2(0.5, 0.5)
+
+[node name="Spawner" type="Node2D" parent="."]
+position = Vector2(2162, 552)
+script = ExtResource("8_auyod")
+
+[node name="SpawnTimer" type="Timer" parent="Spawner"]
+one_shot = true
+
+[node name="AsteroidTimer" type="Timer" parent="Spawner"]
+one_shot = true
+
+[node name="StartPoints" type="Node2D" parent="Spawner"]
+
+[node name="StartPoint1" type="Node2D" parent="Spawner/StartPoints"]
+
+[node name="StartPoint2" type="Node2D" parent="Spawner/StartPoints"]
+
+[node name="StartPoint3" type="Node2D" parent="Spawner/StartPoints"]
+
+[node name="StartPoint4" type="Node2D" parent="Spawner/StartPoints"]
+
+[node name="StartPoint5" type="Node2D" parent="Spawner/StartPoints"]
+
+[node name="StartPoint6" type="Node2D" parent="Spawner/StartPoints"]
+
+[node name="StartPoint7" type="Node2D" parent="Spawner/StartPoints"]
+
+[node name="EndPoints" type="Node2D" parent="Spawner"]
+position = Vector2(-2500, 0)
+
+[node name="EndPoint1" type="Node2D" parent="Spawner/EndPoints"]
+
+[node name="EndPoint2" type="Node2D" parent="Spawner/EndPoints"]
+
+[node name="EndPoint3" type="Node2D" parent="Spawner/EndPoints"]
+
+[node name="EndPoint4" type="Node2D" parent="Spawner/EndPoints"]
+
+[node name="EndPoint5" type="Node2D" parent="Spawner/EndPoints"]
+
+[node name="EndPoint6" type="Node2D" parent="Spawner/EndPoints"]
+
+[node name="EndPoint7" type="Node2D" parent="Spawner/EndPoints"]
+
+[node name="BattleWonUI" type="Control" parent="."]
+process_mode = 3
+z_index = 1001
+z_as_relative = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("5_uuo61")
+
+[node name="PausePanel" type="Panel" parent="BattleWonUI"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_bxn61")
+
+[node name="Label" type="Label" parent="BattleWonUI/PausePanel"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -45.5
+offset_bottom = 45.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Game Paused"
+label_settings = SubResource("LabelSettings_uvi3i")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="WinPanel" type="Panel" parent="BattleWonUI"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -150.0
+offset_right = 250.0
+offset_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5iw6l")
+
+[node name="Label" type="Label" parent="BattleWonUI/WinPanel"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 5.0
+offset_bottom = 55.0
+grow_horizontal = 2
+text = "Battle Won!"
+label_settings = SubResource("LabelSettings_s2olj")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="BattleWonUI/WinPanel"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -150.0
+offset_top = -60.0
+offset_right = 150.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxFlat_357il")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1vehy")
+theme_override_styles/normal = SubResource("StyleBoxFlat_q6evv")
+text = "Continue
+"
+
+[node name="RunWonPanel" type="Panel" parent="BattleWonUI"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -150.0
+offset_right = 250.0
+offset_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5iw6l")
+
+[node name="Label" type="Label" parent="BattleWonUI/RunWonPanel"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 5.0
+offset_bottom = 55.0
+grow_horizontal = 2
+text = "Game Won!"
+label_settings = SubResource("LabelSettings_s2olj")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="BattleWonUI/RunWonPanel"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -150.0
+offset_top = -60.0
+offset_right = 150.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxFlat_357il")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1vehy")
+theme_override_styles/normal = SubResource("StyleBoxFlat_q6evv")
+text = "To Main Menu"
+
+[node name="GameOverPanel" type="Panel" parent="BattleWonUI"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -150.0
+offset_right = 250.0
+offset_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5iw6l")
+
+[node name="Label" type="Label" parent="BattleWonUI/GameOverPanel"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 5.0
+offset_bottom = 55.0
+grow_horizontal = 2
+text = "Game Over!"
+label_settings = SubResource("LabelSettings_s2olj")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="BattleWonUI/GameOverPanel"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -150.0
+offset_top = -60.0
+offset_right = 150.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxFlat_1vo6g")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1vehy")
+theme_override_styles/normal = SubResource("StyleBoxFlat_q6evv")
+text = "To Main Menu
+"
+
+[connection signal="battle_won" from="Spawner" to="BattleWonUI" method="_on_spawner_battle_won"]
+[connection signal="run_won" from="Spawner" to="BattleWonUI" method="_on_spawner_run_won"]
+[connection signal="timeout" from="Spawner/SpawnTimer" to="Spawner" method="_on_spawn_timer_timeout"]
+[connection signal="timeout" from="Spawner/AsteroidTimer" to="Spawner" method="_on_asteroid_timer_timeout"]

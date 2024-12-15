@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=3 uid="uid://vaa5mgpblt1i"]
+
+[ext_resource type="Script" path="res://Scripts/UI/boss_test_ui.gd" id="1_3em6k"]
+[ext_resource type="PackedScene" uid="uid://fjekkg6gu2q0" path="res://Scenes/UI/health_bar_boss.tscn" id="2_dc3ow"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ka27r"]
+font_size = 24
+outline_color = Color(0, 0, 0, 1)
+
+[node name="BossTestUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3em6k")
+
+[node name="HealthBarBoss" parent="." instance=ExtResource("2_dc3ow")]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -606.0
+offset_top = -54.0
+offset_right = -6.0
+offset_bottom = -4.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="BossName" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -305.0
+offset_top = -101.0
+offset_right = -5.0
+offset_bottom = -61.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "XP-300 \"Demolisher\""
+label_settings = SubResource("LabelSettings_ka27r")
+horizontal_alignment = 2
+vertical_alignment = 1

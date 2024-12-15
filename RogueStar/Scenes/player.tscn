@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=3 uid="uid://cgdoy6fay4f0w"]
+
+[ext_resource type="Script" path="res://Scripts/player_controller.gd" id="1_3tgmx"]
+[ext_resource type="Texture2D" uid="uid://bm8w3qwxiw6j3" path="res://Graphics/Sprites/Player/player ship example.png" id="1_yaygb"]
+[ext_resource type="Material" uid="uid://jfw01jgs047y" path="res://Materials/whiten_material.tres" id="3_gmfoc"]
+[ext_resource type="PackedScene" uid="uid://70dyucoqq33r" path="res://Scenes/Weapons/plasma_gun.tscn" id="4_ob7se"]
+[ext_resource type="Script" path="res://Scripts/item_detector.gd" id="5_2dvyt"]
+[ext_resource type="PackedScene" uid="uid://d085rcbwenyle" path="res://Scenes/blinker.tscn" id="5_uey4n"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1s44b"]
+radius = 64.1249
+
+[node name="Player" type="CharacterBody2D" groups=["player"]]
+script = ExtResource("1_3tgmx")
+gun_scene = ExtResource("4_ob7se")
+whitenMaterial = ExtResource("3_gmfoc")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+material = ExtResource("3_gmfoc")
+texture = ExtResource("1_yaygb")
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("5_2dvyt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 4)
+shape = SubResource("CircleShape2D_1s44b")
+
+[node name="ProjectileSpawnPoint1" type="Node2D" parent="."]
+position = Vector2(-56, -48)
+
+[node name="ProjectileSpawnPoint2" type="Node2D" parent="."]
+position = Vector2(56, -48)
+
+[node name="InvincibilityTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="SecondsTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="BonusTimer" type="Timer" parent="."]
+wait_time = 10.0
+one_shot = true
+
+[node name="Blinker" parent="." instance=ExtResource("5_uey4n")]
+
+[connection signal="area_entered" from="Area2D" to="Area2D" method="_on_area_entered"]
+[connection signal="bonus_collected" from="Area2D" to="." method="_on_bonus_collected"]
+[connection signal="timeout" from="SecondsTimer" to="." method="_on_seconds_timer_timeout"]
+[connection signal="timeout" from="BonusTimer" to="." method="_on_bonus_timer_timeout"]

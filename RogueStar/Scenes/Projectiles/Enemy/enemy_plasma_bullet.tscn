@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://rq03fvmly2tp"]
+
+[ext_resource type="PackedScene" uid="uid://5q27rugvtwgk" path="res://Scenes/Projectiles/bullet.tscn" id="1_qj7er"]
+[ext_resource type="Texture2D" uid="uid://d0nrf3oyerjg" path="res://Graphics/Sprites/Projectiles/Enemy/enemy_plasma.png" id="2_01bkj"]
+[ext_resource type="Script" path="res://Scripts/Projectiles/Enemy/enemy_plasma_bullet.gd" id="2_w3r20"]
+[ext_resource type="AudioStream" uid="uid://ctu7av5ttju6x" path="res://Sounds/SFX/MiniShot2.wav" id="4_3spsw"]
+
+[node name="EnemyPlasmaBullet" instance=ExtResource("1_qj7er")]
+script = ExtResource("2_w3r20")
+speed = 500.0
+
+[node name="Sprite2D" parent="." index="0"]
+position = Vector2(0, 0)
+texture = ExtResource("2_01bkj")
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(-3, 0)
+scale = Vector2(0.7, 0.7)
+
+[node name="VisibleOnScreenNotifier2D" parent="." index="2"]
+position = Vector2(8.34465e-07, 4.17233e-07)
+scale = Vector2(1.6, 0.8)
+
+[node name="AudioStreamPlayer" parent="." index="3"]
+stream = ExtResource("4_3spsw")

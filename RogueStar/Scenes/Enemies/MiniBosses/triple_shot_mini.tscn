@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://c3eaa0ls6a14t"]
+
+[ext_resource type="PackedScene" uid="uid://cef5xhcjskw60" path="res://Scenes/Enemies/mini_boss.tscn" id="1_4pj33"]
+[ext_resource type="Script" path="res://Scripts/Enemies/MiniBosses/triple_shot_mini_boss.gd" id="2_u1p7i"]
+[ext_resource type="PackedScene" uid="uid://rq03fvmly2tp" path="res://Scenes/Projectiles/Enemy/enemy_plasma_bullet.tscn" id="3_e6qvm"]
+[ext_resource type="Texture2D" uid="uid://dl5c41abdjw0a" path="res://Graphics/Sprites/Enemies/Common/ship4_example.png" id="4_1cmo3"]
+
+[node name="TripleShotMini" instance=ExtResource("1_4pj33")]
+script = ExtResource("2_u1p7i")
+fireRate = 2.0
+bullets = Array[PackedScene]([ExtResource("3_e6qvm")])
+speed = 200.0
+maxHealth = 100
+health = 100
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" parent="." index="1"]
+rotation = 3.14159
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_1cmo3")
+
+[node name="ProjectileSpawnPos1" type="Node2D" parent="FiringPositions" index="0"]
+position = Vector2(0, -160)
+
+[node name="FireTimer" type="Timer" parent="." index="3"]
+one_shot = true

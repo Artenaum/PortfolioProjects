@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6m3mwm3raowl"]
+
+[ext_resource type="PackedScene" uid="uid://cef5xhcjskw60" path="res://Scenes/Enemies/mini_boss.tscn" id="1_xprof"]
+[ext_resource type="Script" path="res://Scripts/Enemies/boss.gd" id="2_q7bk5"]
+
+[node name="Boss" instance=ExtResource("1_xprof")]
+script = ExtResource("2_q7bk5")
+frequency = 1.0
+health = 10

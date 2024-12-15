@@ -1,0 +1,16 @@
+res://Stages/battle_mode.tscn
+res://Shaders/flash_white.tres
+res://Materials/whiten_material.tres
+res://Shaders/flash_red.gdshader
+res://Shaders/flash_red2.tres
+res://Materials/redden_material.tres
+res://Scenes/player.tscn
+res://Scenes/Enemies/enemy.tscn
+res://Stages/map_mode.tscn
+res://Scenes/star.tscn
+res://Stages/enemy_test_mode.tscn
+res://Stages/main_menu.tscn
+res://Scenes/UI/battle_ui.tscn
+res://Scenes/Enemies/Bosses/boss_5.tscn
+res://Scenes/Enemies/Common/shooter_enemy.tscn
+res://Scenes/Projectiles/bullet.tscn

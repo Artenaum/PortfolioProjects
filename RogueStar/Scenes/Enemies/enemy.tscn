@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://bk5e74ilh2oaw"]
+
+[ext_resource type="Texture2D" uid="uid://dg7h7x57wh1b" path="res://Graphics/Sprites/Enemies/Common/enemy placeholder.png" id="1_m2okj"]
+[ext_resource type="Script" path="res://Scripts/Enemies/enemy.gd" id="1_ug478"]
+[ext_resource type="Material" uid="uid://b6ikkuqsilryk" path="res://Shaders/flash_red2.tres" id="2_pwiky"]
+[ext_resource type="Material" uid="uid://c31wgbvcfxmco" path="res://Materials/redden_material.tres" id="2_uet51"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ffiqx"]
+radius = 128.0
+height = 256.0
+
+[node name="Enemy" type="Area2D" groups=["enemy"]]
+script = ExtResource("1_ug478")
+redMaterial = ExtResource("2_uet51")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_ffiqx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+material = ExtResource("2_pwiky")
+texture = ExtResource("1_m2okj")
+
+[node name="FiringPositions" type="Node2D" parent="."]
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]

@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://pokx2c0qai6q"]
+
+[ext_resource type="PackedScene" uid="uid://b6m3mwm3raowl" path="res://Scenes/Enemies/boss.tscn" id="1_uag08"]
+[ext_resource type="Script" path="res://Scripts/Enemies/Bosses/boss_5.gd" id="2_2nm0k"]
+[ext_resource type="PackedScene" uid="uid://82af83wp702l" path="res://Scenes/Projectiles/Enemy/Bosses/boss_5_bullet_1.tscn" id="3_pdiox"]
+[ext_resource type="PackedScene" uid="uid://dog8gfan7xean" path="res://Scenes/Projectiles/Enemy/Bosses/boss_5_bullet_2.tscn" id="4_ouu85"]
+[ext_resource type="PackedScene" uid="uid://d1hjuwhekoptn" path="res://Scenes/Projectiles/Enemy/Bosses/boss_5_bullet_3.tscn" id="5_2py5b"]
+[ext_resource type="Texture2D" uid="uid://dl1qrcnlkakap" path="res://Graphics/Sprites/Enemies/Common/ship8.png" id="6_kgcsb"]
+
+[node name="Boss5" instance=ExtResource("1_uag08")]
+script = ExtResource("2_2nm0k")
+fireRate = 3.0
+attack1FireRate = 0.3
+attack2FireRate = 0.01
+attack3FireRate = 0.01
+bullets = Array[PackedScene]([ExtResource("3_pdiox"), ExtResource("3_pdiox"), ExtResource("4_ouu85"), ExtResource("5_2py5b")])
+frequency = 5.0
+maxHealth = 1000
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" parent="." index="1"]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("6_kgcsb")
+
+[node name="ProjectileSpawnPos1" type="Node2D" parent="FiringPositions" index="0"]
+position = Vector2(-64, -128)
+
+[node name="ProjectileSpawnPos2" type="Node2D" parent="FiringPositions" index="1"]
+position = Vector2(64, -128)
+
+[node name="ProjectileSpawnPos3" type="Node2D" parent="FiringPositions" index="2"]
+position = Vector2(0, -24)
+
+[node name="ProjectileSpawnPos4" type="Node2D" parent="FiringPositions" index="3"]
+position = Vector2(0, -120)
+
+[node name="FireTimer" type="Timer" parent="." index="3"]
+one_shot = true
+
+[node name="Attack1Timer" type="Timer" parent="." index="4"]
+one_shot = true
+
+[node name="Attack2Timer" type="Timer" parent="." index="5"]
+one_shot = true
+
+[node name="Attack3Timer" type="Timer" parent="." index="6"]
+one_shot = true

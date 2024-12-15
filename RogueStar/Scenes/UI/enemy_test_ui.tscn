@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7qvep4hprjp1"]
+
+[ext_resource type="PackedScene" uid="uid://b2ibt5v8ami7q" path="res://Scenes/UI/health_bar.tscn" id="2_4880m"]
+[ext_resource type="PackedScene" uid="uid://vaa5mgpblt1i" path="res://Scenes/UI/boss_test_ui.tscn" id="2_lesnc"]
+
+[node name="EnemyTestUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HealthBar" parent="." instance=ExtResource("2_4880m")]
+layout_mode = 1
+offset_left = 6.0
+offset_top = 5.0
+offset_right = -1614.0
+offset_bottom = -1025.0
+
+[node name="BossTestUI" parent="." instance=ExtResource("2_lesnc")]
+layout_mode = 1

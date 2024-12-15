@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cilpvq1ws1xpy"]
+
+[ext_resource type="Script" path="res://Scripts/Bonuses/attack_bonus.gd" id="1_kbvhh"]
+[ext_resource type="Texture2D" uid="uid://ktey1odpbfih" path="res://Graphics/Sprites/Icons/Attack Icon.png" id="2_ivkwk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_705a2"]
+radius = 30.0
+
+[node name="Attack Bonus" type="Area2D" groups=["Bonus"]]
+script = ExtResource("1_kbvhh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 1
+texture_filter = 1
+scale = Vector2(4, 4)
+texture = ExtResource("2_ivkwk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_705a2")
