@@ -21,16 +21,12 @@ func steer():
 		steering = (ideal_velocity - velocity).normalized() * steeringForce
 	return steering
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	target = get_parent().get_node("Player")
 	global_rotation = 0
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
 	velocity = transform.x * speed
-	#if target != null:
 	acceleration -= steer()
 	velocity += acceleration * delta
 	velocity = velocity.limit_length(speed)
@@ -41,7 +37,6 @@ func _physics_process(delta: float) -> void:
 
 func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
 	queue_free()
-
 
 func _on_area_entered(area: Area2D) -> void:
 	if area.get_parent() is Player:

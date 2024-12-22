@@ -2,19 +2,15 @@ extends Boss
 
 @onready var fireTimer := $FireTimer
 @onready var attack1Timer := $Attack1Timer
-#@onready var attack1Timer2 := $Attack1Timer2
 @onready var attack2Timer := $Attack2Timer
 @onready var attack2Timer2 := $Attack2Timer2
-#@onready var attack3Timer := $Attack3Timer
 
 @onready var player := get_node("/root/Battle Mode/Player")
 
 @export var fireRate := 3.0
 @export var attack1FireRate := 0.02
-#@export var attack1FireRate2 := 0.5
 @export var attack2FireRate := 0.01
 @export var attack2FireRate2 := 0.3
-#@export var attack3FireRate := 0.3
 
 var boss_name: String = "Collector"
 
@@ -43,8 +39,6 @@ func _process(delta: float) -> void:
 		attack1FireRate = 0.01
 		attack2FireRate2 = 0.2
 	if fireTimer.is_stopped() && reached_position:
-		#random.randomize()
-		#print(randomAttack)
 		match randomAttack:
 			0:
 				if iterator <= 129:
@@ -78,36 +72,6 @@ func _process(delta: float) -> void:
 					iterator2 = 0
 					randomAttack = random.randi() % 3
 					fireTimer.start(fireRate)
-			#1: 
-			#	if iterator2 <= 9:
-			#		if attack2Timer2.is_stopped():
-			#			if iterator <= 10:
-			#				if attack2Timer.is_stopped():
-			#					attack1(upperLaser)
-			#					#upperLaser = !upperLaser
-			#					iterator += 1
-			#					attack2Timer.start(attack2FireRate)
-			#			else:
-			#				upperLaser = !upperLaser
-			#				iterator = 0
-			#				iterator2 += 1
-			#				attack2Timer2.start(attack2FireRate2)
-			#	else:
-			#		upperRocket = true
-			#		iterator2 = 0
-			#		randomAttack = random.randi() % 3
-			#		fireTimer.start(fireRate)
-			#2: 
-			#	if iterator <= 1:
-			#		if attack3Timer.is_stopped():
-			#			directionToPlayer = rad_to_deg((position - player.position).angle())
-			#			attack2()
-			#			iterator += 1
-			#			attack3Timer.start(attack3FireRate)
-			#	else:
-			#		iterator = 0
-			#		randomAttack = random.randi() % 3
-			#		fireTimer.start(fireRate)
 			_: print("Random attack error")
 
 
@@ -133,12 +97,3 @@ func attack1(_secondPhase: bool):
 func attack2():
 	fire_attack(3, 0)
 	fire_attack(4, 0)
-
-#func attack1(upperLaser: bool):
-#	if upperLaser:
-#		fire_attack(1, 0)
-#	else:
-#		fire_attack(2, 0)
-
-#func attack2():
-#	fire_attack(3, directionToPlayer)

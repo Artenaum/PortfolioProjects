@@ -3,7 +3,6 @@ extends Node2D
 @export var bullet_scene: PackedScene
 @export var buffed_bullet_scene: PackedScene
 @export var time_between_shots: float = 0.1
-#@export var bullet_speed: float # 1000
 
 var timer
 var can_shoot: bool
@@ -11,7 +10,6 @@ var can_shoot: bool
 func _ready() -> void:
 	can_shoot = true
 
-	# initialize timer
 	timer = get_child(0)
 	timer.wait_time = time_between_shots
 	timer.one_shot = true

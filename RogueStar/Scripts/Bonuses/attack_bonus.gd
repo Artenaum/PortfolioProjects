@@ -11,6 +11,3 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-#func _on_area_entered(area: Area2D) -> void:
-#	if area.get_parent() is Player:
-#		emit_signal("bonus_collected", bonus_type)

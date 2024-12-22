@@ -14,10 +14,6 @@ var verticalPos: float = 0.0
 var holdingDistance: float = 300.0
 var time: float
 
-#func _ready() -> void:
-	#self.set_physics_process(true)
-	#startingPositionY = position.y
-
 func _physics_process(delta: float) -> void:
 	if position.x < get_viewport_rect().size.x - holdingDistance:
 		reached_position = true
@@ -28,9 +24,6 @@ func _physics_process(delta: float) -> void:
 		time += delta
 		verticalPos = cos(time * frequency) * amplitude
 		position.y += verticalPos * delta
-		#position.y += verticalSpeed * delta * verticalDirection
-		#if position.y > startingPositionY - 500.0 or position.y < startingPositionY + 500.0:
-			#verticalDirection *= -1
 
 
 func fire_attack(attack: int, angle: float):

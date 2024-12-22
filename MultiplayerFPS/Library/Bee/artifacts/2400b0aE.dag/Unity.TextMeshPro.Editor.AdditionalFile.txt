@@ -1,1 +1,1 @@
-/home/artenaum/Документы/study/Unity Projects/MultiplayerFPS
+/home/artenaum/Documents/Projects/Unity/MultiplayerFPS

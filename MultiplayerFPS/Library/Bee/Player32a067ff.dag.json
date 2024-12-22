@@ -167,98 +167,7 @@
         159,
         160,
         161,
-        162,
-        163,
-        164,
-        165,
-        166,
-        167,
-        168,
-        169,
-        170,
-        171,
-        172,
-        173,
-        174,
-        175,
-        176,
-        177,
-        178,
-        179,
-        180,
-        181,
-        182,
-        183,
-        184,
-        185,
-        186,
-        187,
-        188,
-        189,
-        190,
-        191,
-        192,
-        193,
-        194,
-        195,
-        196,
-        197,
-        198,
-        199,
-        200,
-        201,
-        202,
-        203,
-        204,
-        205,
-        206,
-        207,
-        208,
-        209,
-        210,
-        211,
-        212,
-        213,
-        214,
-        215,
-        216,
-        217,
-        218,
-        219,
-        220,
-        221,
-        222,
-        223,
-        224,
-        225,
-        226,
-        227,
-        228,
-        229,
-        230,
-        231,
-        232,
-        233,
-        234,
-        235,
-        236,
-        237,
-        238,
-        239,
-        240,
-        241,
-        242,
-        243,
-        244,
-        245,
-        246,
-        247,
-        248,
-        249,
-        250,
-        251,
-        252,
-        253
+        162
       ],
       "AllowUnexpectedOutput": true,
       "DebugActionIndex": 0
@@ -363,6 +272,17 @@
       "DebugActionIndex": 9
     },
     {
+      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/resources.resource",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win64/Data/resources.resource"
+      ],
+      "Outputs": [
+        "Builds/Windows/MultiplayerFPS_Data/resources.resource"
+      ],
+      "DebugActionIndex": 10
+    },
+    {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/resources.assets",
       "ActionType": "CopyFiles",
       "Inputs": [
@@ -371,7 +291,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/resources.assets"
       ],
-      "DebugActionIndex": 10
+      "DebugActionIndex": 11
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/globalgamemanagers",
@@ -382,7 +302,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/globalgamemanagers"
       ],
-      "DebugActionIndex": 11
+      "DebugActionIndex": 12
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/sharedassets0.assets.resS",
@@ -393,7 +313,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/sharedassets0.assets.resS"
       ],
-      "DebugActionIndex": 12
+      "DebugActionIndex": 13
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/RuntimeInitializeOnLoads.json",
@@ -404,7 +324,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/RuntimeInitializeOnLoads.json"
       ],
-      "DebugActionIndex": 13
+      "DebugActionIndex": 14
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/level0.resS",
@@ -415,7 +335,18 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/level0.resS"
       ],
-      "DebugActionIndex": 14
+      "DebugActionIndex": 15
+    },
+    {
+      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/sharedassets1.assets.resS",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win64/Data/sharedassets1.assets.resS"
+      ],
+      "Outputs": [
+        "Builds/Windows/MultiplayerFPS_Data/sharedassets1.assets.resS"
+      ],
+      "DebugActionIndex": 16
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Resources/unity_builtin_extra",
@@ -426,7 +357,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Resources/unity_builtin_extra"
       ],
-      "DebugActionIndex": 15
+      "DebugActionIndex": 17
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/StreamingAssets/UnityServicesProjectConfiguration.json",
@@ -437,7 +368,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/StreamingAssets/UnityServicesProjectConfiguration.json"
       ],
-      "DebugActionIndex": 16
+      "DebugActionIndex": 18
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.JSONSerializeModule.dll",
@@ -448,7 +379,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.JSONSerializeModule.dll"
       ],
-      "DebugActionIndex": 17
+      "DebugActionIndex": 19
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll",
@@ -458,28 +389,6 @@
       ],
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll"
-      ],
-      "DebugActionIndex": 18
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityConnectModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.UnityConnectModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityConnectModule.pdb"
-      ],
-      "DebugActionIndex": 19
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.SpriteShapeModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.SpriteShapeModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.SpriteShapeModule.pdb"
       ],
       "DebugActionIndex": 20
     },
@@ -495,28 +404,6 @@
       "DebugActionIndex": 21
     },
     {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ClothModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.ClothModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ClothModule.pdb"
-      ],
-      "DebugActionIndex": 22
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityTestProtocolModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.UnityTestProtocolModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityTestProtocolModule.pdb"
-      ],
-      "DebugActionIndex": 23
-    },
-    {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.GridModule.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
@@ -525,7 +412,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.GridModule.dll"
       ],
-      "DebugActionIndex": 24
+      "DebugActionIndex": 22
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Newtonsoft.Json.dll",
@@ -536,7 +423,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/Newtonsoft.Json.dll"
       ],
-      "DebugActionIndex": 25
+      "DebugActionIndex": 23
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.CoreModule.dll",
@@ -547,7 +434,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.CoreModule.dll"
       ],
-      "DebugActionIndex": 26
+      "DebugActionIndex": 24
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UIModule.dll",
@@ -558,18 +445,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UIModule.dll"
       ],
-      "DebugActionIndex": 27
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.AnimationModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.AnimationModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.AnimationModule.pdb"
-      ],
-      "DebugActionIndex": 28
+      "DebugActionIndex": 25
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll",
@@ -580,18 +456,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll"
       ],
-      "DebugActionIndex": 29
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UIElementsNativeModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.UIElementsNativeModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UIElementsNativeModule.pdb"
-      ],
-      "DebugActionIndex": 30
+      "DebugActionIndex": 26
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.NVIDIAModule.dll",
@@ -602,7 +467,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.NVIDIAModule.dll"
       ],
-      "DebugActionIndex": 31
+      "DebugActionIndex": 27
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UmbraModule.dll",
@@ -613,7 +478,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UmbraModule.dll"
       ],
-      "DebugActionIndex": 32
+      "DebugActionIndex": 28
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ClothModule.dll",
@@ -624,73 +489,18 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ClothModule.dll"
       ],
-      "DebugActionIndex": 33
+      "DebugActionIndex": 29
     },
     {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Analytics.pdb",
+      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Postprocessing.Runtime.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Analytics.pdb"
+        "Temp/StagingArea/Data/Managed/Unity.Postprocessing.Runtime.dll"
       ],
       "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Analytics.pdb"
+        "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Postprocessing.Runtime.dll"
       ],
-      "DebugActionIndex": 34
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.TilemapModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.TilemapModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.TilemapModule.pdb"
-      ],
-      "DebugActionIndex": 35
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.TextCoreTextEngineModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.TextCoreTextEngineModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.TextCoreTextEngineModule.pdb"
-      ],
-      "DebugActionIndex": 36
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ParticleSystemModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.ParticleSystemModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ParticleSystemModule.pdb"
-      ],
-      "DebugActionIndex": 37
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.TextRenderingModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.TextRenderingModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.TextRenderingModule.pdb"
-      ],
-      "DebugActionIndex": 38
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.GameCenterModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.GameCenterModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.GameCenterModule.pdb"
-      ],
-      "DebugActionIndex": 39
+      "DebugActionIndex": 30
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.AssetBundleModule.dll",
@@ -701,7 +511,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.AssetBundleModule.dll"
       ],
-      "DebugActionIndex": 40
+      "DebugActionIndex": 31
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.HotReloadModule.dll",
@@ -712,18 +522,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.HotReloadModule.dll"
       ],
-      "DebugActionIndex": 41
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.pdb"
-      ],
-      "DebugActionIndex": 42
+      "DebugActionIndex": 32
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.TerrainModule.dll",
@@ -734,7 +533,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.TerrainModule.dll"
       ],
-      "DebugActionIndex": 43
+      "DebugActionIndex": 33
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/System.Transactions.dll",
@@ -745,18 +544,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/System.Transactions.dll"
       ],
-      "DebugActionIndex": 44
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.InputModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.InputModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.InputModule.pdb"
-      ],
-      "DebugActionIndex": 45
+      "DebugActionIndex": 34
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.SharedInternalsModule.dll",
@@ -767,7 +555,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.SharedInternalsModule.dll"
       ],
-      "DebugActionIndex": 46
+      "DebugActionIndex": 35
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.TLSModule.dll",
@@ -778,7 +566,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.TLSModule.dll"
       ],
-      "DebugActionIndex": 47
+      "DebugActionIndex": 36
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll",
@@ -789,7 +577,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll"
       ],
-      "DebugActionIndex": 48
+      "DebugActionIndex": 37
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/System.Data.DataSetExtensions.dll",
@@ -800,73 +588,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/System.Data.DataSetExtensions.dll"
       ],
-      "DebugActionIndex": 49
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.XRModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.XRModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.XRModule.pdb"
-      ],
-      "DebugActionIndex": 50
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.AssetBundleModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.AssetBundleModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.AssetBundleModule.pdb"
-      ],
-      "DebugActionIndex": 51
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Assembly-CSharp.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/Assembly-CSharp.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/Assembly-CSharp.pdb"
-      ],
-      "DebugActionIndex": 52
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ImageConversionModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.ImageConversionModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ImageConversionModule.pdb"
-      ],
-      "DebugActionIndex": 53
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.AudioModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.AudioModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.AudioModule.pdb"
-      ],
-      "DebugActionIndex": 54
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.TerrainPhysicsModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.TerrainPhysicsModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.TerrainPhysicsModule.pdb"
-      ],
-      "DebugActionIndex": 55
+      "DebugActionIndex": 38
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.TilemapModule.dll",
@@ -877,7 +599,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.TilemapModule.dll"
       ],
-      "DebugActionIndex": 56
+      "DebugActionIndex": 39
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.InputLegacyModule.dll",
@@ -888,18 +610,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.InputLegacyModule.dll"
       ],
-      "DebugActionIndex": 57
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.UnityAnalyticsCommonModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.pdb"
-      ],
-      "DebugActionIndex": 58
+      "DebugActionIndex": 40
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.PerformanceReportingModule.dll",
@@ -910,18 +621,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.PerformanceReportingModule.dll"
       ],
-      "DebugActionIndex": 59
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.LocalizationModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.LocalizationModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.LocalizationModule.pdb"
-      ],
-      "DebugActionIndex": 60
+      "DebugActionIndex": 41
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/websocket-sharp.dll",
@@ -932,7 +632,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/websocket-sharp.dll"
       ],
-      "DebugActionIndex": 61
+      "DebugActionIndex": 42
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ClusterInputModule.dll",
@@ -943,7 +643,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ClusterInputModule.dll"
       ],
-      "DebugActionIndex": 62
+      "DebugActionIndex": 43
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.VisualScripting.State.dll",
@@ -954,51 +654,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.VisualScripting.State.dll"
       ],
-      "DebugActionIndex": 63
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Photon3Unity3D.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/Photon3Unity3D.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/Photon3Unity3D.pdb"
-      ],
-      "DebugActionIndex": 64
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Environments.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Environments.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Environments.pdb"
-      ],
-      "DebugActionIndex": 65
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ClusterInputModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.ClusterInputModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ClusterInputModule.pdb"
-      ],
-      "DebugActionIndex": 66
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.VisualScripting.State.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/Unity.VisualScripting.State.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.VisualScripting.State.pdb"
-      ],
-      "DebugActionIndex": 67
+      "DebugActionIndex": 44
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.AccessibilityModule.dll",
@@ -1009,7 +665,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.AccessibilityModule.dll"
       ],
-      "DebugActionIndex": 68
+      "DebugActionIndex": 45
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Environments.Internal.dll",
@@ -1020,40 +676,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Environments.Internal.dll"
       ],
-      "DebugActionIndex": 69
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityWebRequestModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.UnityWebRequestModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityWebRequestModule.pdb"
-      ],
-      "DebugActionIndex": 70
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.VirtualTexturingModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.VirtualTexturingModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.VirtualTexturingModule.pdb"
-      ],
-      "DebugActionIndex": 71
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.GridModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.GridModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.GridModule.pdb"
-      ],
-      "DebugActionIndex": 72
+      "DebugActionIndex": 46
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.AndroidJNIModule.dll",
@@ -1064,7 +687,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.AndroidJNIModule.dll"
       ],
-      "DebugActionIndex": 73
+      "DebugActionIndex": 47
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Threading.dll",
@@ -1075,18 +698,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Threading.dll"
       ],
-      "DebugActionIndex": 74
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.JSONSerializeModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.JSONSerializeModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.JSONSerializeModule.pdb"
-      ],
-      "DebugActionIndex": 75
+      "DebugActionIndex": 48
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.VisualScripting.Flow.dll",
@@ -1097,18 +709,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.VisualScripting.Flow.dll"
       ],
-      "DebugActionIndex": 76
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.CoreModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.CoreModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.CoreModule.pdb"
-      ],
-      "DebugActionIndex": 77
+      "DebugActionIndex": 49
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/System.Drawing.dll",
@@ -1119,7 +720,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/System.Drawing.dll"
       ],
-      "DebugActionIndex": 78
+      "DebugActionIndex": 50
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UIElementsModule.dll",
@@ -1130,7 +731,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UIElementsModule.dll"
       ],
-      "DebugActionIndex": 79
+      "DebugActionIndex": 51
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/PhotonUnityNetworking.dll",
@@ -1141,18 +742,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/PhotonUnityNetworking.dll"
       ],
-      "DebugActionIndex": 80
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Timeline.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/Unity.Timeline.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Timeline.pdb"
-      ],
-      "DebugActionIndex": 81
+      "DebugActionIndex": 52
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.VisualScripting.Core.dll",
@@ -1163,7 +753,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.VisualScripting.Core.dll"
       ],
-      "DebugActionIndex": 82
+      "DebugActionIndex": 53
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/PhotonRealtime.dll",
@@ -1174,7 +764,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/PhotonRealtime.dll"
       ],
-      "DebugActionIndex": 83
+      "DebugActionIndex": 54
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll",
@@ -1185,29 +775,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll"
       ],
-      "DebugActionIndex": 84
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.DirectorModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.DirectorModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.DirectorModule.pdb"
-      ],
-      "DebugActionIndex": 85
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UNETModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.UNETModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UNETModule.pdb"
-      ],
-      "DebugActionIndex": 86
+      "DebugActionIndex": 55
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ParticleSystemModule.dll",
@@ -1218,18 +786,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ParticleSystemModule.dll"
       ],
-      "DebugActionIndex": 87
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.SubstanceModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.SubstanceModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.SubstanceModule.pdb"
-      ],
-      "DebugActionIndex": 88
+      "DebugActionIndex": 56
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll",
@@ -1240,18 +797,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll"
       ],
-      "DebugActionIndex": 89
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.TextMeshPro.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/Unity.TextMeshPro.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.TextMeshPro.pdb"
-      ],
-      "DebugActionIndex": 90
+      "DebugActionIndex": 57
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Assembly-CSharp.dll",
@@ -1262,18 +808,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/Assembly-CSharp.dll"
       ],
-      "DebugActionIndex": 91
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Telemetry.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Telemetry.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Telemetry.pdb"
-      ],
-      "DebugActionIndex": 92
+      "DebugActionIndex": 58
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.WindModule.dll",
@@ -1284,29 +819,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.WindModule.dll"
       ],
-      "DebugActionIndex": 93
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/Unity.Services.Core.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.pdb"
-      ],
-      "DebugActionIndex": 94
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/PhotonUnityNetworking.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/PhotonUnityNetworking.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/PhotonUnityNetworking.pdb"
-      ],
-      "DebugActionIndex": 95
+      "DebugActionIndex": 59
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Timeline.dll",
@@ -1317,7 +830,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Timeline.dll"
       ],
-      "DebugActionIndex": 96
+      "DebugActionIndex": 60
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/PhotonUnityNetworking.Utilities.dll",
@@ -1328,7 +841,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/PhotonUnityNetworking.Utilities.dll"
       ],
-      "DebugActionIndex": 97
+      "DebugActionIndex": 61
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.GameCenterModule.dll",
@@ -1339,7 +852,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.GameCenterModule.dll"
       ],
-      "DebugActionIndex": 98
+      "DebugActionIndex": 62
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Environments.dll",
@@ -1350,40 +863,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Environments.dll"
       ],
-      "DebugActionIndex": 99
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.PhysicsModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.PhysicsModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.PhysicsModule.pdb"
-      ],
-      "DebugActionIndex": 100
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.VRModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.VRModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.VRModule.pdb"
-      ],
-      "DebugActionIndex": 101
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.AccessibilityModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.AccessibilityModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.AccessibilityModule.pdb"
-      ],
-      "DebugActionIndex": 102
+      "DebugActionIndex": 63
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ImageConversionModule.dll",
@@ -1394,7 +874,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ImageConversionModule.dll"
       ],
-      "DebugActionIndex": 103
+      "DebugActionIndex": 64
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Registration.dll",
@@ -1405,7 +885,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Registration.dll"
       ],
-      "DebugActionIndex": 104
+      "DebugActionIndex": 65
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ProfilerModule.dll",
@@ -1416,7 +896,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ProfilerModule.dll"
       ],
-      "DebugActionIndex": 105
+      "DebugActionIndex": 66
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.XRModule.dll",
@@ -1427,7 +907,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.XRModule.dll"
       ],
-      "DebugActionIndex": 106
+      "DebugActionIndex": 67
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.InputModule.dll",
@@ -1438,18 +918,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.InputModule.dll"
       ],
-      "DebugActionIndex": 107
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UIModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.UIModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UIModule.pdb"
-      ],
-      "DebugActionIndex": 108
+      "DebugActionIndex": 68
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.Physics2DModule.dll",
@@ -1460,51 +929,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.Physics2DModule.dll"
       ],
-      "DebugActionIndex": 109
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Configuration.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Configuration.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Configuration.pdb"
-      ],
-      "DebugActionIndex": 110
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.IMGUIModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.IMGUIModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.IMGUIModule.pdb"
-      ],
-      "DebugActionIndex": 111
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.VisualScripting.Core.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/Unity.VisualScripting.Core.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.VisualScripting.Core.pdb"
-      ],
-      "DebugActionIndex": 112
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ScreenCaptureModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.ScreenCaptureModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ScreenCaptureModule.pdb"
-      ],
-      "DebugActionIndex": 113
+      "DebugActionIndex": 69
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.VehiclesModule.dll",
@@ -1515,7 +940,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.VehiclesModule.dll"
       ],
-      "DebugActionIndex": 114
+      "DebugActionIndex": 70
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/System.Core.dll",
@@ -1526,7 +951,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/System.Core.dll"
       ],
-      "DebugActionIndex": 115
+      "DebugActionIndex": 71
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Scheduler.dll",
@@ -1537,7 +962,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Scheduler.dll"
       ],
-      "DebugActionIndex": 116
+      "DebugActionIndex": 72
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.DirectorModule.dll",
@@ -1548,7 +973,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.DirectorModule.dll"
       ],
-      "DebugActionIndex": 117
+      "DebugActionIndex": 73
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.SpriteShapeModule.dll",
@@ -1559,51 +984,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.SpriteShapeModule.dll"
       ],
-      "DebugActionIndex": 118
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.GIModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.GIModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.GIModule.pdb"
-      ],
-      "DebugActionIndex": 119
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.AIModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.AIModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.AIModule.pdb"
-      ],
-      "DebugActionIndex": 120
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ARModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.ARModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ARModule.pdb"
-      ],
-      "DebugActionIndex": 121
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.pdb"
-      ],
-      "DebugActionIndex": 122
+      "DebugActionIndex": 74
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UIElementsNativeModule.dll",
@@ -1614,7 +995,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UIElementsNativeModule.dll"
       ],
-      "DebugActionIndex": 123
+      "DebugActionIndex": 75
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityAnalyticsModule.dll",
@@ -1625,29 +1006,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityAnalyticsModule.dll"
       ],
-      "DebugActionIndex": 124
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.Physics2DModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.Physics2DModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.Physics2DModule.pdb"
-      ],
-      "DebugActionIndex": 125
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.InputLegacyModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.InputLegacyModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.InputLegacyModule.pdb"
-      ],
-      "DebugActionIndex": 126
+      "DebugActionIndex": 76
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.TerrainPhysicsModule.dll",
@@ -1658,29 +1017,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.TerrainPhysicsModule.dll"
       ],
-      "DebugActionIndex": 127
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/PhotonChat.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/PhotonChat.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/PhotonChat.pdb"
-      ],
-      "DebugActionIndex": 128
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.DSPGraphModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.DSPGraphModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.DSPGraphModule.pdb"
-      ],
-      "DebugActionIndex": 129
+      "DebugActionIndex": 77
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/System.Runtime.Serialization.dll",
@@ -1691,7 +1028,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/System.Runtime.Serialization.dll"
       ],
-      "DebugActionIndex": 130
+      "DebugActionIndex": 78
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll",
@@ -1702,18 +1039,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll"
       ],
-      "DebugActionIndex": 131
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.VehiclesModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.VehiclesModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.VehiclesModule.pdb"
-      ],
-      "DebugActionIndex": 132
+      "DebugActionIndex": 79
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.AnimationModule.dll",
@@ -1724,51 +1050,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.AnimationModule.dll"
       ],
-      "DebugActionIndex": 133
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.SpriteMaskModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.SpriteMaskModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.SpriteMaskModule.pdb"
-      ],
-      "DebugActionIndex": 134
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.CrashReportingModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.CrashReportingModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.CrashReportingModule.pdb"
-      ],
-      "DebugActionIndex": 135
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.AndroidJNIModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.AndroidJNIModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.AndroidJNIModule.pdb"
-      ],
-      "DebugActionIndex": 136
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/PhotonUnityNetworking.Utilities.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/PhotonUnityNetworking.Utilities.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/PhotonUnityNetworking.Utilities.pdb"
-      ],
-      "DebugActionIndex": 137
+      "DebugActionIndex": 80
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/System.EnterpriseServices.dll",
@@ -1779,29 +1061,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/System.EnterpriseServices.dll"
       ],
-      "DebugActionIndex": 138
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.TextCoreFontEngineModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.TextCoreFontEngineModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.TextCoreFontEngineModule.pdb"
-      ],
-      "DebugActionIndex": 139
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.TerrainModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.TerrainModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.TerrainModule.pdb"
-      ],
-      "DebugActionIndex": 140
+      "DebugActionIndex": 81
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.CrashReportingModule.dll",
@@ -1812,7 +1072,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.CrashReportingModule.dll"
       ],
-      "DebugActionIndex": 141
+      "DebugActionIndex": 82
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/System.dll",
@@ -1823,7 +1083,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/System.dll"
       ],
-      "DebugActionIndex": 142
+      "DebugActionIndex": 83
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Internal.dll",
@@ -1834,7 +1094,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Internal.dll"
       ],
-      "DebugActionIndex": 143
+      "DebugActionIndex": 84
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.VirtualTexturingModule.dll",
@@ -1845,29 +1105,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.VirtualTexturingModule.dll"
       ],
-      "DebugActionIndex": 144
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ProfilerModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.ProfilerModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ProfilerModule.pdb"
-      ],
-      "DebugActionIndex": 145
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.HotReloadModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.HotReloadModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.HotReloadModule.pdb"
-      ],
-      "DebugActionIndex": 146
+      "DebugActionIndex": 85
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/System.Security.dll",
@@ -1878,7 +1116,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/System.Security.dll"
       ],
-      "DebugActionIndex": 147
+      "DebugActionIndex": 86
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.PhysicsModule.dll",
@@ -1889,7 +1127,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.PhysicsModule.dll"
       ],
-      "DebugActionIndex": 148
+      "DebugActionIndex": 87
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Device.dll",
@@ -1900,18 +1138,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Device.dll"
       ],
-      "DebugActionIndex": 149
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityAnalyticsModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.UnityAnalyticsModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityAnalyticsModule.pdb"
-      ],
-      "DebugActionIndex": 150
+      "DebugActionIndex": 88
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll",
@@ -1922,18 +1149,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll"
       ],
-      "DebugActionIndex": 151
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityWebRequestAudioModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.UnityWebRequestAudioModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityWebRequestAudioModule.pdb"
-      ],
-      "DebugActionIndex": 152
+      "DebugActionIndex": 89
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.GIModule.dll",
@@ -1944,7 +1160,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.GIModule.dll"
       ],
-      "DebugActionIndex": 153
+      "DebugActionIndex": 90
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/PhotonChat.dll",
@@ -1955,7 +1171,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/PhotonChat.dll"
       ],
-      "DebugActionIndex": 154
+      "DebugActionIndex": 91
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.SpriteMaskModule.dll",
@@ -1966,29 +1182,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.SpriteMaskModule.dll"
       ],
-      "DebugActionIndex": 155
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Scheduler.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Scheduler.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Scheduler.pdb"
-      ],
-      "DebugActionIndex": 156
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UIElementsModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.UIElementsModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UIElementsModule.pdb"
-      ],
-      "DebugActionIndex": 157
+      "DebugActionIndex": 92
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityConnectModule.dll",
@@ -1999,7 +1193,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityConnectModule.dll"
       ],
-      "DebugActionIndex": 158
+      "DebugActionIndex": 93
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityCurlModule.dll",
@@ -2010,7 +1204,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityCurlModule.dll"
       ],
-      "DebugActionIndex": 159
+      "DebugActionIndex": 94
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/System.Net.Http.dll",
@@ -2021,18 +1215,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/System.Net.Http.dll"
       ],
-      "DebugActionIndex": 160
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Newtonsoft.Json.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/Newtonsoft.Json.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/Newtonsoft.Json.pdb"
-      ],
-      "DebugActionIndex": 161
+      "DebugActionIndex": 95
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityWebRequestModule.dll",
@@ -2043,7 +1226,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityWebRequestModule.dll"
       ],
-      "DebugActionIndex": 162
+      "DebugActionIndex": 96
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/System.Configuration.dll",
@@ -2054,7 +1237,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/System.Configuration.dll"
       ],
-      "DebugActionIndex": 163
+      "DebugActionIndex": 97
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ScreenCaptureModule.dll",
@@ -2065,7 +1248,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ScreenCaptureModule.dll"
       ],
-      "DebugActionIndex": 164
+      "DebugActionIndex": 98
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityTestProtocolModule.dll",
@@ -2076,7 +1259,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityTestProtocolModule.dll"
       ],
-      "DebugActionIndex": 165
+      "DebugActionIndex": 99
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.dll",
@@ -2087,7 +1270,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.dll"
       ],
-      "DebugActionIndex": 166
+      "DebugActionIndex": 100
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.SubstanceModule.dll",
@@ -2098,7 +1281,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.SubstanceModule.dll"
       ],
-      "DebugActionIndex": 167
+      "DebugActionIndex": 101
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ClusterRendererModule.dll",
@@ -2109,7 +1292,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ClusterRendererModule.dll"
       ],
-      "DebugActionIndex": 168
+      "DebugActionIndex": 102
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/System.Data.dll",
@@ -2120,18 +1303,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/System.Data.dll"
       ],
-      "DebugActionIndex": 169
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.WindModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.WindModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.WindModule.pdb"
-      ],
-      "DebugActionIndex": 170
+      "DebugActionIndex": 103
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UI.dll",
@@ -2142,29 +1314,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UI.dll"
       ],
-      "DebugActionIndex": 171
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityCurlModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.UnityCurlModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityCurlModule.pdb"
-      ],
-      "DebugActionIndex": 172
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Device.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Device.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Device.pdb"
-      ],
-      "DebugActionIndex": 173
+      "DebugActionIndex": 104
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.VFXModule.dll",
@@ -2175,18 +1325,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.VFXModule.dll"
       ],
-      "DebugActionIndex": 174
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.SharedInternalsModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.SharedInternalsModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.SharedInternalsModule.pdb"
-      ],
-      "DebugActionIndex": 175
+      "DebugActionIndex": 105
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UNETModule.dll",
@@ -2197,7 +1336,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UNETModule.dll"
       ],
-      "DebugActionIndex": 176
+      "DebugActionIndex": 106
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Telemetry.dll",
@@ -2208,18 +1347,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Telemetry.dll"
       ],
-      "DebugActionIndex": 177
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.NVIDIAModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.NVIDIAModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.NVIDIAModule.pdb"
-      ],
-      "DebugActionIndex": 178
+      "DebugActionIndex": 107
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.VRModule.dll",
@@ -2230,7 +1358,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.VRModule.dll"
       ],
-      "DebugActionIndex": 179
+      "DebugActionIndex": 108
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll",
@@ -2241,51 +1369,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll"
       ],
-      "DebugActionIndex": 180
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.StreamingModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.StreamingModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.StreamingModule.pdb"
-      ],
-      "DebugActionIndex": 181
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Registration.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Registration.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Registration.pdb"
-      ],
-      "DebugActionIndex": 182
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Internal.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Internal.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Internal.pdb"
-      ],
-      "DebugActionIndex": 183
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ClusterRendererModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.ClusterRendererModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ClusterRendererModule.pdb"
-      ],
-      "DebugActionIndex": 184
+      "DebugActionIndex": 109
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.IMGUIModule.dll",
@@ -2296,18 +1380,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.IMGUIModule.dll"
       ],
-      "DebugActionIndex": 185
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UmbraModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.UmbraModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UmbraModule.pdb"
-      ],
-      "DebugActionIndex": 186
+      "DebugActionIndex": 110
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.VideoModule.dll",
@@ -2318,7 +1391,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.VideoModule.dll"
       ],
-      "DebugActionIndex": 187
+      "DebugActionIndex": 111
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll",
@@ -2329,7 +1402,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll"
       ],
-      "DebugActionIndex": 188
+      "DebugActionIndex": 112
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.AIModule.dll",
@@ -2340,18 +1413,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.AIModule.dll"
       ],
-      "DebugActionIndex": 189
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Threading.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Threading.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Threading.pdb"
-      ],
-      "DebugActionIndex": 190
+      "DebugActionIndex": 113
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Networking.dll",
@@ -2362,18 +1424,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Networking.dll"
       ],
-      "DebugActionIndex": 191
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Networking.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Networking.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Networking.pdb"
-      ],
-      "DebugActionIndex": 192
+      "DebugActionIndex": 114
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.TextRenderingModule.dll",
@@ -2384,7 +1435,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.TextRenderingModule.dll"
       ],
-      "DebugActionIndex": 193
+      "DebugActionIndex": 115
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/System.IO.Compression.dll",
@@ -2395,7 +1446,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/System.IO.Compression.dll"
       ],
-      "DebugActionIndex": 194
+      "DebugActionIndex": 116
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.DSPGraphModule.dll",
@@ -2406,7 +1457,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.DSPGraphModule.dll"
       ],
-      "DebugActionIndex": 195
+      "DebugActionIndex": 117
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.TextMeshPro.dll",
@@ -2417,29 +1468,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.TextMeshPro.dll"
       ],
-      "DebugActionIndex": 196
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UI.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.UI.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UI.pdb"
-      ],
-      "DebugActionIndex": 197
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Environments.Internal.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/Unity.Services.Core.Environments.Internal.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Environments.Internal.pdb"
-      ],
-      "DebugActionIndex": 198
+      "DebugActionIndex": 118
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/System.Xml.dll",
@@ -2450,7 +1479,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/System.Xml.dll"
       ],
-      "DebugActionIndex": 199
+      "DebugActionIndex": 119
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Analytics.dll",
@@ -2461,29 +1490,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Analytics.dll"
       ],
-      "DebugActionIndex": 200
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityWebRequestWWWModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.UnityWebRequestWWWModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityWebRequestWWWModule.pdb"
-      ],
-      "DebugActionIndex": 201
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/PhotonRealtime.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/PhotonRealtime.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/PhotonRealtime.pdb"
-      ],
-      "DebugActionIndex": 202
+      "DebugActionIndex": 120
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Configuration.dll",
@@ -2494,7 +1501,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.Services.Core.Configuration.dll"
       ],
-      "DebugActionIndex": 203
+      "DebugActionIndex": 121
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.LocalizationModule.dll",
@@ -2505,7 +1512,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.LocalizationModule.dll"
       ],
-      "DebugActionIndex": 204
+      "DebugActionIndex": 122
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Mono.Security.dll",
@@ -2516,18 +1523,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/Mono.Security.dll"
       ],
-      "DebugActionIndex": 205
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.SubsystemsModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.SubsystemsModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.SubsystemsModule.pdb"
-      ],
-      "DebugActionIndex": 206
+      "DebugActionIndex": 123
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Photon3Unity3D.dll",
@@ -2538,7 +1534,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/Photon3Unity3D.dll"
       ],
-      "DebugActionIndex": 207
+      "DebugActionIndex": 124
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.dll",
@@ -2549,18 +1545,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.dll"
       ],
-      "DebugActionIndex": 208
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.PerformanceReportingModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.PerformanceReportingModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.PerformanceReportingModule.pdb"
-      ],
-      "DebugActionIndex": 209
+      "DebugActionIndex": 125
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/System.ComponentModel.Composition.dll",
@@ -2571,29 +1556,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/System.ComponentModel.Composition.dll"
       ],
-      "DebugActionIndex": 210
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.VideoModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.VideoModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.VideoModule.pdb"
-      ],
-      "DebugActionIndex": 211
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.VFXModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.VFXModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.VFXModule.pdb"
-      ],
-      "DebugActionIndex": 212
+      "DebugActionIndex": 126
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/System.IO.Compression.FileSystem.dll",
@@ -2604,7 +1567,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/System.IO.Compression.FileSystem.dll"
       ],
-      "DebugActionIndex": 213
+      "DebugActionIndex": 127
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/System.Numerics.dll",
@@ -2615,18 +1578,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/System.Numerics.dll"
       ],
-      "DebugActionIndex": 214
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.TLSModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.TLSModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.TLSModule.pdb"
-      ],
-      "DebugActionIndex": 215
+      "DebugActionIndex": 128
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/System.Xml.Linq.dll",
@@ -2637,7 +1589,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/System.Xml.Linq.dll"
       ],
-      "DebugActionIndex": 216
+      "DebugActionIndex": 129
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.AudioModule.dll",
@@ -2648,7 +1600,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.AudioModule.dll"
       ],
-      "DebugActionIndex": 217
+      "DebugActionIndex": 130
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.StreamingModule.dll",
@@ -2659,7 +1611,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.StreamingModule.dll"
       ],
-      "DebugActionIndex": 218
+      "DebugActionIndex": 131
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/mscorlib.dll",
@@ -2670,7 +1622,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/mscorlib.dll"
       ],
-      "DebugActionIndex": 219
+      "DebugActionIndex": 132
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/netstandard.dll",
@@ -2681,29 +1633,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/netstandard.dll"
       ],
-      "DebugActionIndex": 220
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/Unity.VisualScripting.Flow.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/Unity.VisualScripting.Flow.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/Unity.VisualScripting.Flow.pdb"
-      ],
-      "DebugActionIndex": 221
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityWebRequestTextureModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.UnityWebRequestTextureModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.UnityWebRequestTextureModule.pdb"
-      ],
-      "DebugActionIndex": 222
+      "DebugActionIndex": 133
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ARModule.dll",
@@ -2714,7 +1644,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.ARModule.dll"
       ],
-      "DebugActionIndex": 223
+      "DebugActionIndex": 134
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/System.ServiceModel.Internals.dll",
@@ -2725,18 +1655,7 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Managed/System.ServiceModel.Internals.dll"
       ],
-      "DebugActionIndex": 224
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.pdb"
-      ],
-      "Outputs": [
-        "Builds/Windows/MultiplayerFPS_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.pdb"
-      ],
-      "DebugActionIndex": 225
+      "DebugActionIndex": 135
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info",
@@ -2747,7 +1666,7 @@
         "Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info"
       ],
       "AllowUnwrittenOutputFiles": true,
-      "DebugActionIndex": 226
+      "DebugActionIndex": 136
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/app.info",
@@ -2759,20 +1678,20 @@
         "Builds/Windows/MultiplayerFPS_Data/app.info"
       ],
       "ToBuildDependencies": [
-        226
+        136
       ],
-      "DebugActionIndex": 227
+      "DebugActionIndex": 137
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS_Data/Resources/unity default resources",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/Data/Resources/unity default resources"
+        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/Data/Resources/unity default resources"
       ],
       "Outputs": [
         "Builds/Windows/MultiplayerFPS_Data/Resources/unity default resources"
       ],
-      "DebugActionIndex": 228
+      "DebugActionIndex": 138
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MultiplayerFPS.exe",
@@ -2783,260 +1702,249 @@
       "Outputs": [
         "Builds/Windows/MultiplayerFPS.exe"
       ],
-      "DebugActionIndex": 229
+      "DebugActionIndex": 139
     },
     {
       "Annotation": "CopyFiles Builds/Windows/UnityPlayer.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/UnityPlayer.dll"
+        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/UnityPlayer.dll"
       ],
       "Outputs": [
         "Builds/Windows/UnityPlayer.dll"
       ],
-      "DebugActionIndex": 230
+      "DebugActionIndex": 140
     },
     {
       "Annotation": "CopyFiles Builds/Windows/UnityCrashHandler64.exe",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/UnityCrashHandler64.exe"
+        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/UnityCrashHandler64.exe"
       ],
       "Outputs": [
         "Builds/Windows/UnityCrashHandler64.exe"
       ],
-      "DebugActionIndex": 231
-    },
-    {
-      "Annotation": "CopyFiles Builds/Windows/WinPixEventRuntime.dll",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/WinPixEventRuntime.dll"
-      ],
-      "Outputs": [
-        "Builds/Windows/WinPixEventRuntime.dll"
-      ],
-      "DebugActionIndex": 232
+      "DebugActionIndex": 141
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll"
+        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll"
       ],
       "Outputs": [
         "Builds/Windows/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll"
       ],
-      "DebugActionIndex": 233
+      "DebugActionIndex": 142
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll"
+        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll"
       ],
       "Outputs": [
         "Builds/Windows/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll"
       ],
-      "DebugActionIndex": 234
+      "DebugActionIndex": 143
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MonoBleedingEdge/etc/mono/config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/config"
+        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/config"
       ],
       "Outputs": [
         "Builds/Windows/MonoBleedingEdge/etc/mono/config"
       ],
-      "DebugActionIndex": 235
+      "DebugActionIndex": 144
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MonoBleedingEdge/etc/mono/browscap.ini",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/browscap.ini"
+        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/browscap.ini"
       ],
       "Outputs": [
         "Builds/Windows/MonoBleedingEdge/etc/mono/browscap.ini"
       ],
-      "DebugActionIndex": 236
+      "DebugActionIndex": 145
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx"
+        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx"
       ],
       "Outputs": [
         "Builds/Windows/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 237
+      "DebugActionIndex": 146
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MonoBleedingEdge/etc/mono/4.0/settings.map",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.0/settings.map"
+        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.0/settings.map"
       ],
       "Outputs": [
         "Builds/Windows/MonoBleedingEdge/etc/mono/4.0/settings.map"
       ],
-      "DebugActionIndex": 238
+      "DebugActionIndex": 147
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MonoBleedingEdge/etc/mono/4.0/web.config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.0/web.config"
+        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.0/web.config"
       ],
       "Outputs": [
         "Builds/Windows/MonoBleedingEdge/etc/mono/4.0/web.config"
       ],
-      "DebugActionIndex": 239
+      "DebugActionIndex": 148
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MonoBleedingEdge/etc/mono/4.0/machine.config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.0/machine.config"
+        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.0/machine.config"
       ],
       "Outputs": [
         "Builds/Windows/MonoBleedingEdge/etc/mono/4.0/machine.config"
       ],
-      "DebugActionIndex": 240
+      "DebugActionIndex": 149
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MonoBleedingEdge/etc/mono/mconfig/config.xml",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/mconfig/config.xml"
+        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/mconfig/config.xml"
       ],
       "Outputs": [
         "Builds/Windows/MonoBleedingEdge/etc/mono/mconfig/config.xml"
       ],
-      "DebugActionIndex": 241
+      "DebugActionIndex": 150
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx"
+        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx"
       ],
       "Outputs": [
         "Builds/Windows/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 242
+      "DebugActionIndex": 151
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MonoBleedingEdge/etc/mono/4.5/settings.map",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.5/settings.map"
+        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.5/settings.map"
       ],
       "Outputs": [
         "Builds/Windows/MonoBleedingEdge/etc/mono/4.5/settings.map"
       ],
-      "DebugActionIndex": 243
+      "DebugActionIndex": 152
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MonoBleedingEdge/etc/mono/4.5/web.config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.5/web.config"
+        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.5/web.config"
       ],
       "Outputs": [
         "Builds/Windows/MonoBleedingEdge/etc/mono/4.5/web.config"
       ],
-      "DebugActionIndex": 244
+      "DebugActionIndex": 153
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MonoBleedingEdge/etc/mono/4.5/machine.config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.5/machine.config"
+        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.5/machine.config"
       ],
       "Outputs": [
         "Builds/Windows/MonoBleedingEdge/etc/mono/4.5/machine.config"
       ],
-      "DebugActionIndex": 245
+      "DebugActionIndex": 154
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx"
+        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx"
       ],
       "Outputs": [
         "Builds/Windows/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 246
+      "DebugActionIndex": 155
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MonoBleedingEdge/etc/mono/2.0/settings.map",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/2.0/settings.map"
+        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/2.0/settings.map"
       ],
       "Outputs": [
         "Builds/Windows/MonoBleedingEdge/etc/mono/2.0/settings.map"
       ],
-      "DebugActionIndex": 247
+      "DebugActionIndex": 156
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MonoBleedingEdge/etc/mono/2.0/web.config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/2.0/web.config"
+        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/2.0/web.config"
       ],
       "Outputs": [
         "Builds/Windows/MonoBleedingEdge/etc/mono/2.0/web.config"
       ],
-      "DebugActionIndex": 248
+      "DebugActionIndex": 157
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MonoBleedingEdge/etc/mono/2.0/machine.config",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/2.0/machine.config"
+        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/2.0/machine.config"
       ],
       "Outputs": [
         "Builds/Windows/MonoBleedingEdge/etc/mono/2.0/machine.config"
       ],
-      "DebugActionIndex": 249
+      "DebugActionIndex": 158
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser"
+        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser"
       ],
       "Outputs": [
         "Builds/Windows/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 250
+      "DebugActionIndex": 159
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser"
+        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser"
       ],
       "Outputs": [
         "Builds/Windows/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 251
+      "DebugActionIndex": 160
     },
     {
       "Annotation": "CopyFiles Builds/Windows/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser"
+        "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser"
       ],
       "Outputs": [
         "Builds/Windows/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 252
+      "DebugActionIndex": 161
     },
     {
       "Annotation": "Player",
@@ -3179,7 +2087,6 @@
         133,
         134,
         135,
-        136,
         137,
         138,
         139,
@@ -3204,100 +2111,10 @@
         158,
         159,
         160,
-        161,
-        162,
-        163,
-        164,
-        165,
-        166,
-        167,
-        168,
-        169,
-        170,
-        171,
-        172,
-        173,
-        174,
-        175,
-        176,
-        177,
-        178,
-        179,
-        180,
-        181,
-        182,
-        183,
-        184,
-        185,
-        186,
-        187,
-        188,
-        189,
-        190,
-        191,
-        192,
-        193,
-        194,
-        195,
-        196,
-        197,
-        198,
-        199,
-        200,
-        201,
-        202,
-        203,
-        204,
-        205,
-        206,
-        207,
-        208,
-        209,
-        210,
-        211,
-        212,
-        213,
-        214,
-        215,
-        216,
-        217,
-        218,
-        219,
-        220,
-        221,
-        222,
-        223,
-        224,
-        225,
-        227,
-        228,
-        229,
-        230,
-        231,
-        232,
-        233,
-        234,
-        235,
-        236,
-        237,
-        238,
-        239,
-        240,
-        241,
-        242,
-        243,
-        244,
-        245,
-        246,
-        247,
-        248,
-        249,
-        250,
-        251,
-        252
+        161
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 253
+      "DebugActionIndex": 162
     }
   ],
   "FileSignatures": [
@@ -3421,10 +2238,10 @@
       "File": "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport"
     },
     {
-      "File": "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono"
+      "File": "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono"
     },
     {
-      "File": "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/Data/Resources"
+      "File": "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/Data/Resources"
     },
     {
       "File": "Builds/Windows/GameAssembly.dll"
@@ -3444,11 +2261,11 @@
       "Path": "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport"
     },
     {
-      "Path": "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono",
+      "Path": "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono",
       "Recurse": 1
     },
     {
-      "Path": "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_development_mono/Data/Resources",
+      "Path": "/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/Data/Resources",
       "Recurse": 1
     },
     {
@@ -3500,7 +2317,7 @@
   "EmitDataForBeeWhy": 0,
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "Player": 253
+          "Player": 162
         }
 ,  "DefaultNodes": [
     0

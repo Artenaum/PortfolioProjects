@@ -7,10 +7,6 @@ var system1 = {
 	"fast_enemy": 1,
 }
 
-#var enemiesPerSystem = {}
-
-#Dictionary dict {}
-
 func save_system(system: Dictionary):
 	var saveSystem = FileAccess.open("user://savesystem.save", FileAccess.WRITE)
 	var jsonString = JSON.stringify(system)
@@ -19,5 +15,3 @@ func save_system(system: Dictionary):
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass
-	#save_system(system1)
-	#get_tree().change_scene_to_file("res://Stages/battle_mode.tscn")

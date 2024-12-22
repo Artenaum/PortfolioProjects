@@ -112,11 +112,18 @@
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
+-define:PHOTON_UNITY_NETWORKING
+-define:PUN_2_0_OR_NEWER
+-define:PUN_2_OR_NEWER
+-define:PUN_2_19_OR_NEWER
+-define:UNITY_POST_PROCESSING_STACK_V2
 -define:CONDITIONAL_IGNORE_SUPPORTED
 -define:TEST_FRAMEWORK_1_1_18_OR_NEWER
 -define:NO_COV_EDITORPREF
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
+-r:"/home/artenaum/Documents/Projects/Unity/MultiplayerFPS/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
+-r:"/home/artenaum/Documents/Projects/Unity/MultiplayerFPS/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll"
 -r:"/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
@@ -201,11 +208,7 @@
 -r:"/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll"
 -r:"/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll"
 -r:"/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll"
--r:"/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Gradle.dll"
--r:"/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll"
--r:"/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll"
 -r:"/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll"
--r:"/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
 -r:"/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/Microsoft.Win32.Primitives.dll"
 -r:"/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.AppContext.dll"
 -r:"/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Buffers.dll"
@@ -331,8 +334,6 @@
 -r:"/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Xml.dll"
 -r:"/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.dll"
 -r:"/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/mscorlib.dll"
--r:"/home/artenaum/Документы/study/Unity Projects/MultiplayerFPS/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
--r:"/home/artenaum/Документы/study/Unity Projects/MultiplayerFPS/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll"
 -r:"Library/Bee/artifacts/2400b0aE.dag/Unity.Settings.Editor.ref.dll"
 -r:"Library/Bee/artifacts/2400b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.ref.dll"
 -r:"Library/Bee/artifacts/2400b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.ref.dll"

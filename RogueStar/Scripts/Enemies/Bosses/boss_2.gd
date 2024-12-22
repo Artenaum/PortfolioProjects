@@ -40,8 +40,6 @@ func _process(delta: float) -> void:
 		attack2FireRate2 = 0.2
 		attack3FireRate = 0.4
 	if fireTimer.is_stopped() && reached_position:
-		#random.randomize()
-		#print(randomAttack)
 		match randomAttack:
 			0:
 				if iterator <= 9:
@@ -55,18 +53,6 @@ func _process(delta: float) -> void:
 					iterator = 0
 					randomAttack = random.randi() % 3
 					fireTimer.start(fireRate)
-			#1: 
-			#	if iterator <= 7:
-			#		if attack2Timer.is_stopped():
-			#			attack1(upperRocket)
-			#			upperRocket = !upperRocket
-			#			iterator += 1
-			#			attack2Timer.start(attack2FireRate)
-			#	else:
-			#		upperRocket = true
-			#		iterator = 0
-			#		randomAttack = random.randi() % 3
-			#		fireTimer.start(fireRate)
 			1: 
 				if iterator2 <= 2:
 					if attack2Timer2.is_stopped():

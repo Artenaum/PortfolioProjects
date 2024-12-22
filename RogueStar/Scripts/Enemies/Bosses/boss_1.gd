@@ -33,11 +33,7 @@ func _process(delta: float) -> void:
 		fireRate = 1.0
 		attack1FireRate = 0.4
 		attack2FireRate = 0.3
-		#frequency = 2.0
-		#amplitude = 600.0
 	if fireTimer.is_stopped() && reached_position:
-		#random.randomize()
-		#print(randomAttack)
 		match randomAttack:
 			0:
 				if iterator <= 9:

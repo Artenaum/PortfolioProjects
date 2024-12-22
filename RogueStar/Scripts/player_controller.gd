@@ -93,17 +93,19 @@ func shoot(_buffed: bool):
 
 func load_player_stats():
 	if not FileAccess.file_exists("user://saveplayerstats.save"):
-		#playerStats.currentSystemX = _map.get(_map.keys()[0]).pos.x
-		#playerStats.currentSystemY = _map.get(_map.keys()[0]).pos.y
 		return
+
 	var saveSystem = FileAccess.open("user://saveplayerstats.save", FileAccess.READ)
+
 	while saveSystem.get_position() < saveSystem.get_length():
 		var jsonString = saveSystem.get_line()
 		var json = JSON.new()
 		var parseResult = json.parse(jsonString)
+
 		if not parseResult == OK:
 			print("JSON Parse Error: ", json.get_error_message(), " in ", jsonString, " at line ", json.get_error_line())
-			continue # 
+			continue
+
 		playerStats = json.get_data()
 
 func take_damage(amount: int):
@@ -121,14 +123,13 @@ func take_damage(amount: int):
 	health -= amount
 	print("Player health = %s" % health)
 	emit_signal("health_changed", health)
+
 	if (health <= 0):
 		died.emit()
 		queue_free()
 
-
 func _on_bonus_timer_timeout() -> void:
 	current_bonus = Bonus.NONE
-
 
 func _on_bonus_collected(bonusType) -> void:
 	match bonusType:
@@ -155,5 +156,6 @@ func _on_seconds_timer_timeout() -> void:
 	bonus_second_passed.emit()
 	bonusTimeLeft -= 1.0
 	print("Time left: %s" %bonusTimeLeft)
+
 	if not bonusTimeLeft <= 0:
 		secondsTimer.start(1.0)

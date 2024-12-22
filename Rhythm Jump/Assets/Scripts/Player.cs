@@ -2,13 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
-{
-    //private bool grounded = true;
+public class Player : MonoBehaviour {
 
     private CharacterController controller;
     private Vector3 direction;
-    public float speed = 10.386f; // 10.386
+    public float speed = 10.386f;
 
     private int desiredLane = 1; // 0 = left, 1 = middle, 2 = right
     public float laneDistance = 1;
@@ -26,27 +24,17 @@ public class Player : MonoBehaviour
 
     public GameObject explosionEffect;
     private Animations animations;
-    // Start is called before the first frame update
-    void Start()
-    {
+
+    void Start() {
         controller = GetComponent<CharacterController>();
         animations = GetComponentInChildren<Animations>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         direction.z = speed;
-        //Debug.Log("Jump Height: " + (transform.position.y - initialHeight).ToString());
-        //while(!controller.isGrounded) {
-            //jumpTime += Time.deltaTime;
-        //}
-        //Debug.Log("Jump Length:" + (jumpTime / 10.386f).ToString());
-        
 
         if (controller.isGrounded) {
             animations.StopJumpAnimation();
-            //direction.y = -1;
             if (Input.GetKeyDown(KeyCode.Space)) {
                 Jump(jumpStrength);
             }
@@ -54,13 +42,13 @@ public class Player : MonoBehaviour
             direction.y += gravity * Time.deltaTime;
             animations.PlayJumpAnimation();
         }
-        
 
         if (Input.GetKeyDown(KeyCode.RightArrow)) {
             desiredLane++;
             if (desiredLane == 3)
                 desiredLane = 2;
         }
+
         if (Input.GetKeyDown(KeyCode.LeftArrow)) {
             desiredLane--;
             if (desiredLane == -1)
@@ -77,25 +65,6 @@ public class Player : MonoBehaviour
 
         controller.Move(direction * Time.deltaTime);
         transform.position = Vector3.Lerp(transform.position, targetPosition, 10f * Time.fixedDeltaTime);
-    }
-
-    void FixedUpdate()
-    {
-        //grounded = Physics.Raycast(transform.position, Vector3.down, 0.5f);
-        /*transform.Translate(Vector3.forward * speed * Time.deltaTime);
-
-        if (Input.GetKey(KeyCode.LeftArrow)) {
-            transform.Translate(Vector3.right * -sideSpeed * Time.deltaTime);
-        }
-        if (Input.GetKey(KeyCode.RightArrow)) {
-            transform.Translate(Vector3.right * sideSpeed * Time.deltaTime);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space) && grounded) {
-            Jump();
-        }*/
-
-        //controller.Move(direction * Time.deltaTime);
     }
 
     private void Jump(float strength) {

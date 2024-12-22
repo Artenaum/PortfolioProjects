@@ -43,8 +43,6 @@ func _process(delta: float) -> void:
 		attack1FireRate2 = 0.4
 		attack2FireRate2 = 0.2
 	if fireTimer.is_stopped() && reached_position && player != null:
-		#random.randomize()
-		#print(randomAttack)
 		match randomAttack:
 			0:
 				if iterator2 <= 1:
@@ -69,7 +67,6 @@ func _process(delta: float) -> void:
 						if iterator <= 10:
 							if attack2Timer.is_stopped():
 								attack1(upperLaser)
-								#upperLaser = !upperLaser
 								iterator += 1
 								attack2Timer.start(attack2FireRate)
 						else:

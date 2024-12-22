@@ -11,10 +11,8 @@ func start_blinking(object, duration):
 	durationTimer.start()
 	blinkTimer.start()
 
-
 func _on_blink_timer_timeout() -> void:
 	blinkObject.visible = !blinkObject.visible
-
 
 func _on_duration_timer_timeout() -> void:
 	blinkTimer.stop()

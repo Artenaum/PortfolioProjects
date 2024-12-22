@@ -26,28 +26,16 @@ func _ready() -> void:
 	pass
 
 func _input(event) -> void:
-	#print("event")
-	#if event == InputEventAction:
-		#print("input event")
-		#print("input")
-		if event.is_action_pressed("pause_game") and not gameWon and not gameOver:
-			print("unpaused")
-			pauseActive = !pauseActive
-			if pauseActive:
-				pausePanel.show()
-				gamePausedLabel.show()
-			else:
-				gamePausedLabel.hide()
-				pausePanel.hide()
-			get_tree().paused = not get_tree().paused
-
-#func _process(delta: float) -> void:
-#	if Input.is_action_just_pressed("pause_game") and pauseActive:
-#		print("unpaused")
-#		pauseActive = !pauseActive
-#		gamePausedLabel.hide()
-#		pausePanel.hide()
-#		get_tree().paused = pauseActive
+	if event.is_action_pressed("pause_game") and not gameWon and not gameOver:
+		print("unpaused")
+		pauseActive = !pauseActive
+		if pauseActive:
+			pausePanel.show()
+			gamePausedLabel.show()
+		else:
+			gamePausedLabel.hide()
+			pausePanel.hide()
+		get_tree().paused = not get_tree().paused
 
 func save_player_stats(_player_stats: Dictionary):
 	var savePlayerStats = FileAccess.open("user://saveplayerstats.save", FileAccess.WRITE)
@@ -89,14 +77,6 @@ func _on_game_over() -> void:
 
 func _on_game_over_button_click() -> void:
 	get_tree().change_scene_to_file("res://Stages/main_menu.tscn")
-
-#func _on_spawner_game_paused() -> void:
-#	print("paused")
-#	pauseActive = !pauseActive
-#	get_tree().paused = pauseActive
-#	pausePanel.show()
-#	gamePausedLabel.show()
-
 
 func _on_spawner_run_won() -> void:
 	runWon = true

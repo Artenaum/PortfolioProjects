@@ -122,6 +122,7 @@
 -define:PUN_2_0_OR_NEWER
 -define:PUN_2_OR_NEWER
 -define:PUN_2_19_OR_NEWER
+-define:UNITY_POST_PROCESSING_STACK_V2
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"/home/artenaum/Unity/Hub/Editor/2021.3.13f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
@@ -342,9 +343,12 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/PhotonUnityNetworking.Utilities.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/PhotonUnityNetworking.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Sprite.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Postprocessing.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Postprocessing.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Analytics.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Environments.ref.dll"
@@ -373,6 +377,12 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Photon/PhotonLibs/WebSocket/SocketWebTcp.cs"
 "Assets/Photon/PhotonLibs/WebSocket/WebSocket.cs"
+"Assets/Scripts/Billboard.cs"
+"Assets/Scripts/Gun.cs"
+"Assets/Scripts/GunInfo.cs"
+"Assets/Scripts/IDamageable.cs"
+"Assets/Scripts/Item.cs"
+"Assets/Scripts/ItemInfo.cs"
 "Assets/Scripts/Launcher.cs"
 "Assets/Scripts/Menu.cs"
 "Assets/Scripts/MenuManager.cs"
@@ -380,8 +390,16 @@
 "Assets/Scripts/PlayerGroundCheck.cs"
 "Assets/Scripts/PlayerListItem.cs"
 "Assets/Scripts/PlayerManager.cs"
+"Assets/Scripts/PlayerNameManager.cs"
+"Assets/Scripts/QuitGame.cs"
 "Assets/Scripts/RoomListItem.cs"
 "Assets/Scripts/RoomManager.cs"
+"Assets/Scripts/Scoreboard.cs"
+"Assets/Scripts/ScoreboardItem.cs"
+"Assets/Scripts/SingleShotGun.cs"
+"Assets/Scripts/SpawnManager.cs"
+"Assets/Scripts/Spawnpoint.cs"
+"Assets/Scripts/UsernameDisplay.cs"
 -langversion:9.0
 
 /deterministic

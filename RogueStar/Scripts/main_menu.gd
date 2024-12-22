@@ -79,7 +79,6 @@ func _on_back_button_click():
 func _process(delta: float) -> void:
 	pass
 
-
 func _on_option_button_item_selected(index: int) -> void:
 	var resSize = resolutions.get(resOptionButton.get_item_text(index))
 	get_tree().root.content_scale_size = resSize

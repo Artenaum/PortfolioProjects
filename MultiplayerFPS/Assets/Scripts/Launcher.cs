@@ -24,28 +24,31 @@ public class Launcher : MonoBehaviourPunCallbacks {
     }
 
     void Start() {
-        Debug.Log("Connecting to Master");
-        PhotonNetwork.ConnectUsingSettings();
+        if (!PhotonNetwork.IsConnected) {
+            Debug.Log("Connecting to Master");
+            PhotonNetwork.ConnectUsingSettings();
+        }
     }
 
     public override void OnConnectedToMaster()
     {
-        Debug.Log("Connected to Master");
-        PhotonNetwork.JoinLobby();
+        if (!PhotonNetwork.InLobby) {
+            Debug.Log("Connected to Master");
+            PhotonNetwork.JoinLobby();
+        }
         PhotonNetwork.AutomaticallySyncScene = true;
     }
 
     public override void OnJoinedLobby() {
         MenuManager.Instance.OpenMenu("Title");
         Debug.Log("Joined Lobby");
-        PhotonNetwork.NickName = "Player " + Random.Range(0, 1000).ToString("0000");
     }
 
     public void CreateRoom() {
         if (string.IsNullOrEmpty(roomNameInputField.text)) {
             return;
         }
-        PhotonNetwork.CreateRoom(roomNameInputField.text);
+        PhotonNetwork.CreateRoom(roomNameInputField.text, new RoomOptions() { EmptyRoomTtl = 0});
         MenuManager.Instance.OpenMenu("Loading");
     }
 

@@ -48,7 +48,6 @@ func move_forward(delta):
 	if isCommon:
 		position.x -= speed * delta
 		if position.x <= -200.0:
-			#position.x = get_viewport_rect().size.x + 200.0
 			dead.emit()
 			queue_free()
 
