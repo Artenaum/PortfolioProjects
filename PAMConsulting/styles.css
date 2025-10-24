@@ -1,0 +1,2049 @@
+@font-face {
+	font-family: "Avenir Regular";
+	src: url('fonts/avenir-next-regular.ttf');
+}
+
+@font-face {
+	font-family: "Avenir Medium";
+	src: url('fonts/avenir-next-medium.ttf');
+}
+
+@font-face {
+	font-family: "Montserrat SemiBold";
+	src: url('fonts/Montserrat-SemiBold.otf');
+}
+
+body {
+	margin: 0;
+}
+
+/* Header */
+.header {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 120px;
+	position: sticky;
+	background: linear-gradient(90deg, #53269d, #6d31d0);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.logo {
+	width: 120px;
+	height: 80px;
+}
+
+.header-menu {
+	display: flex;
+}
+
+.header-menu-button {
+	height: 40px;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	padding-left: 14px;
+	padding-right: 14px;
+	background: none;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.header-menu-button-text {
+	margin: 0;
+	font-family: "Avenir Regular", monospace;
+	font-size: 16px;
+	color: white;
+}
+
+.header-menu-button:hover .header-menu-button-text {
+	text-decoration: underline;
+}
+
+/* Services dropdown */
+.services-menu {
+	display: none;
+	position: absolute;
+	top: 120px;
+	width: 280px;
+	height: 120px;
+	background: white;
+	z-index: 100;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.services-menu-link {
+	font-family: "Avenir Regular", monospace;
+	font-size: 18px;
+	color: #434364;
+	display: block;
+}
+
+.services-menu-link:hover {
+	text-decoration: underline;
+}
+
+.header-end {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 60px;
+}
+
+/* Get in touch button */
+.get-in-touch-button {
+	width: 180px;
+	height: 48px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	padding-left: 24px;
+	padding-right: 24px;
+	background: #ffdb80;
+	border: 0px solid #ffdb80;
+	border-radius: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.get-in-touch-text {
+	font-family: "Montserrat SemiBold", monospace;
+	font-size: 20px;
+	color: #6d31d0;
+	text-wrap: nowrap;
+}
+
+.get-in-touch-button:hover {
+	background: linear-gradient(90deg, #6d31d0, #ab80ef);
+	border: 1px solid #ffdb80;
+}
+
+.get-in-touch-button:hover .get-in-touch-text {
+	background: linear-gradient(90deg, #ffdb80, #fdbfa3);
+	color: transparent;
+	background-clip: text;
+}
+
+
+/* Hamburger menu */
+.hamburger-menu {
+	position: relative;
+	left: 0px;
+	width: 100%;
+	height: 260px;
+	background: white;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.hamburger-button {
+	width: 40px;
+	height: 30px;
+	background: none;
+	border: none;
+	flex-direction: column;
+	justify-content: space-around;
+	display: none;
+	cursor: pointer;
+}
+
+.hamburger-stick {
+	width: 100%;
+	height: 2px;
+	background: white;
+}
+
+
+.main-flex {
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+}
+
+.upper-sections {
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+}
+
+
+/* Swiper */
+.swiper {
+	width: 100%;
+	height: 800px;
+}
+
+.swiper-slide {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	background-size: contain;
+}
+
+.swiper-pagination {
+	--swiper-pagination-right: 5%;
+	--swiper-pagination-bullet-vertical-gap: 12px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.swiper-pagination-bullet {
+	width: 10px;
+	height: 10px;
+	border: 2px solid white;
+	background-color: #ffffff00;
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+	width: 20px;
+	height: 20px;
+	border: none;
+	background-color: white;
+}
+
+.slide-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin-left: 10%;
+}
+
+.slide-blank-space {
+	right: 0;
+	width: 150%;
+}
+
+.slide-tags {
+	width: 100%;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	flex-wrap: wrap;
+	row-gap: 30px;
+	column-gap: 10px;
+}
+
+.slide-tag {
+	height: 20px;
+	color: #ffdb80;
+	background-color: #6d31d050;
+	border: 0px;
+	border-radius: 10px;
+}
+
+.slide-tag-text {
+	margin: 0;
+	font-family: "Monserrat SemiBold", monospace;
+	font-size: 16px;
+}
+
+.slide-tag:hover .slide-tag-text {
+	text-decoration: underline;
+}
+
+.slide-tag-separator1 {
+	width: 2px;
+	height: 10px;
+	background: white;
+}
+
+.slide-tag-separator2 {
+	width: 2px;
+	height: 10px;
+	background: #434364;
+}
+
+.slide-headers {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.slide-header1 {
+	font-family: "Montserrat SemiBold", monospace;
+	font-size: 36px;
+	color: white;
+}
+
+.slide-header2 {
+	font-family: "Montserrat SemiBold", monospace;
+	font-size: 36px;
+	color: #434364;
+}
+
+.slide-sub-header {
+	font-family: "Montserrat SemiBold", monospace;
+	font-size: 20px;
+	color: white;
+}
+
+.slide-paragraph1 {
+	font-family: "Avenir Regular", monospace;
+	font-size: 16px;
+	color: white;
+}
+
+.slide-paragraph2 {
+	font-family: "Avenir Regular", monospace;
+	font-size: 16px;
+	color: #434364;
+}
+
+.find-out-more-button {
+	width: 200px;
+	height: 48px;
+	background: linear-gradient(90deg, #ffeb80, #fdbfa3);
+	border: 0px;
+	border-radius: 88px;
+	font-family: "Montserrat SemiBold", monospace;
+	font-size: 20px;
+	text-align: center;
+	color: #6d31d0;
+	cursor: pointer;
+}
+
+.find-out-more-button:hover {
+	background: linear-gradient(90deg, #6d31d0, #ab80ef);
+	border: 1px solid #ffdb80;
+	color: #ffdb80;
+}
+
+.slide-bottom {
+	height: 400px;
+}
+
+#slide1 {
+	background:	url("/images/image1.jpg");
+	background-size: cover;
+}
+
+#slide2 {
+	background: 
+		linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),
+		url("/images/image2.jpg");
+	background-size: cover;
+}
+
+#slide3 {
+	background:
+		linear-gradient(to right, rgba(183, 214, 239, 1), rgba(183, 214, 239, 0)),
+		url("/images/family.jpg");
+	background-size: cover;
+}
+
+#slide4 {
+	background:
+		linear-gradient(to right, rgba(116, 96, 69, 1), rgba(116, 96, 69, 0)),
+		url("/images/image4.png");
+	background-size: cover;
+}
+
+#slide5 {
+	background:
+		linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),
+		url("images/image5.jpg");
+	background-size: cover;
+}
+
+#slide6 {
+	background:
+		linear-gradient(to right, rgba(142, 161, 189, 1), rgba(142, 161, 189, 0)),
+		url("images/image6.jpg");
+	background-size: cover;
+}
+
+/* Our services section */
+.our-services-section {
+	background: linear-gradient(to bottom, #828cde, #6d31d0);
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.our-services-headline {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 80px;
+	width: 380px;
+	height: 50px;
+}
+
+.our-services-headline h2 {
+	margin: 0;
+	font-family: "Avenir Medium";
+	font-size: 36px;
+	font-weight: 300;
+	line-height: 40px;
+	text-align: center;
+	color: white;
+}
+
+.our-services-headline-line {
+	width: 380px;
+	height: 4px;
+	background-color: #fdbfa3;
+	border: 0;
+}
+
+.our-services-card-section {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	gap: 20px;
+	row-gap: 60px;
+	margin-bottom: 80px;
+}
+
+.our-services-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	border-radius: 20px;
+	background: white;
+	width: 380px;
+	overflow: hidden;
+}
+
+.our-services-card-image-container {
+	display: flex;
+	justify-content: center;
+	height: 260px;
+	width: 100%;
+	border-bottom-right-radius: 20px;
+	overflow: hidden;
+}
+
+.our-services-card-image-container img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+#our-services-card-image-1 {
+	scale: 250%;
+}
+
+#our-services-card-image-2 {
+	object-position: 0px -190px;
+}
+
+.our-services-card-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+
+.our-services-card-content h3 {
+	font-family: "Avenir Medium";
+	font-size: 28px;
+	line-height: 32px;
+	text-align: center;
+	color: #434364;
+	margin: 0;
+	width: 100%;
+}
+
+.our-services-card p {
+	font-family: "Avenir Regular";
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+	text-align: center;
+	color: #434364;
+	margin: 0;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.our-services-card .find-out-more-button {
+	height: 48px;
+	margin-bottom: 20px;
+}
+
+/* Paradise section */
+.paradise-section {
+	display: flex;
+	justify-content: space-between;
+	gap: 70px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-color: white;
+	max-width: 100vw;
+	max-height: 1000px;
+}
+
+.paradise-img-wrapper {
+	position: relative;
+	flex: 1 1 0;
+}
+
+.paradise-img-wrapper img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.transparent-bar {
+	position: absolute;
+	z-index: 10;
+	min-width: 80px;
+	width: 80px;
+	height: 100%;
+	background-color: #ffffff;
+	opacity: 0.5;
+}
+
+#paradise-img-wrapper-left .transparent-bar {
+	right: 0px;
+}
+
+#paradise-img-wrapper-right .transparent-bar {
+	left: 0px;
+}
+
+.paradise-content {
+	display: flex;
+	flex: 0 1 480px;
+	max-width: 480px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.paradise-title {
+	font-family: "Avenir Medium";
+	font-size: 40px;
+	font-weight: 300;
+	color: #434364;
+	margin: 0;
+}
+
+.paradise-text {
+	font-family: "Avenir Regular";
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	text-align: center;
+	color: #434364;
+}
+
+
+/* Why Choose Cyprus Section (wcc) */
+.wcc-section {
+	background: linear-gradient(#fefc9e, #fdbfa3);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 60px;
+}
+
+.wcc-headline {
+	margin-top: 80px;
+	max-width: 580px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.wcc-headline h1 {
+	margin: 0;
+	font-family: "Avenir Medium";
+	font-size: 36px;
+	line-height: 40px;
+	text-align: center;
+	color: #434364;
+	text-wrap-mode: nowrap;
+}
+
+.wcc-headline p {
+	margin: 0;
+	font-family: "Avenir Regular";
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+	text-align: center;
+	color: #434364;
+}
+
+.wcc-boxes {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 20px;
+	justify-content: center;
+	margin-bottom: 80px;
+}
+
+.wcc-box-set {
+	display: flex;
+	flex-flow: row nowrap;
+	gap: 20px;
+}
+
+.wcc-box {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: flex-start;
+	width: 280px;
+	gap: 24px;
+}
+
+.wcc-icon {
+	width: 150px;
+	height: 150px;
+	border-radius: 800px;
+}
+
+#wcc-icon-1 {
+	background: url("/images/icons/money-bag.svg") 50% no-repeat,
+	linear-gradient(to right, #828cde, #6d31d0);
+}
+
+#wcc-icon-2 {
+	background: url("/images/icons/haze.svg") 50% no-repeat,
+	linear-gradient(to right, #fe6f2d, #ffd059);
+}
+
+#wcc-icon-3 {
+	background: url("/images/icons/human-resources.svg") 50% no-repeat,
+	linear-gradient(to right, #828cde, #00b8c3);
+}
+
+#wcc-icon-4 {
+	background: url("/images/icons/house.svg") 50% no-repeat,
+	linear-gradient(to right, #ffb9af 30%, #a651fb);
+}
+
+.wcc-text-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	gap: 4px;
+}
+
+.wcc-text-block h1 {
+	margin: 0;
+	margin-top: 10px;
+	font-family: "Montserrat SemiBold";
+	font-size: 20px;
+	line-height: 32px;
+	text-align: center;
+	color: #6d31d0;
+}
+
+.wcc-text-block p {
+	margin: 0;
+	margin-bottom: 10px;
+	font-family: "Avenir Regular";
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+	text-align: center;
+	color: #434364;
+}
+
+
+/* Cyprus Map Section */
+.map-section {
+	background-color: #fffcf3;
+	min-height: 720px;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	gap: 20px;
+}
+
+.map-cyprus {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin-top: 80px;
+}
+
+.map-headline {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.map-headline h1 {
+	margin: 0;
+	font-family: "Avenir Medium";
+	font-size: 28px;
+	line-height: 32px;
+	color: #6d31d0;
+}
+
+.map-headline p {
+	margin: 0;
+	font-family: "Montserrat SemiBold";
+	font-size: 20px;
+	line-height: 32px;
+	color: #434364;
+}
+
+.map-holder {
+	width: 681px;
+	height: 414px;
+}
+
+#map-background {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 1;
+}
+
+.map-grey-section {
+	position: relative;
+	z-index: 2;
+}
+
+#map-grey-section-north {
+	top: -512px;
+	left: 193px;
+}
+
+#map-grey-section-east {
+	top: -415px;
+	left: 155px;
+}
+
+.map-city {
+	position: relative;
+	z-index: 3;
+}
+
+#nicosia-map {
+	top: -532px;
+	left: 91px;
+}
+
+#nicosia-map:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+#paphos-map {
+	top: -661px;
+	left: 4px;
+}
+
+#limassol-map {
+	top: -796px;
+	left: 112px;
+}
+
+#limassol-map:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+#larnaka-map {
+	top: -1021px;
+	left: 256px;
+}
+
+.map-label {
+	position: relative;
+	font-family: "Avenir Regular";
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+	z-index: 4;
+	margin: 0;
+	width: fit-content;
+}
+
+#nicosia-map-label {
+	top: -610px;
+	left: 200px;
+	color: #434364;
+}
+
+#nicosia-map-label:hover {
+	cursor: pointer;
+}
+
+#nicosia-map:has(+ #nicosia-map-label:hover) {
+	opacity: 0.5;
+}
+
+#paphos-map-label {
+	top: -750px;
+	left: 50px;
+	color: white;
+}
+
+#limassol-map-label {
+	top: -890px;
+	left: 170px;
+	color: white;
+}
+
+#limassol-map-label:hover {
+	cursor: pointer;
+}
+
+#limassol-map:has(+ #limassol-map-label:hover) {
+	opacity: 0.5;
+}
+
+#larnaka-map-label {
+	top: -1090px;
+	left: 310px;
+	color: #434364;
+}
+
+.map-description-card {
+	display: flex;
+	flex-direction: column;
+	width: 480px;
+	height: fit-content;
+	background-color: white;
+	border-radius: 12px;
+	margin-top: 80px;
+	margin-bottom: 35px;
+}
+
+#map-description-card-nicosia {
+	display: none;
+}
+
+.map-description-images {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 10px;
+	margin-top: 13px;
+}
+
+.map-city-description {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	border-radius: 12px;
+	box-shadow: 12.8px 15.36px 13px 0px rgba(0, 0, 0, 0.035);
+}
+
+.map-city-description-title {
+	font-family: "Montserrat SemiBold";
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 32px;
+	text-align: center;
+	color: #434364;
+	margin: 0;
+	margin-top: 4px;
+}
+
+.map-city-description-text {
+	font-family: "Avenir Regular";
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+	text-align: center;
+	color: #434364;
+	margin: 0;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 25px;
+}
+
+
+/* Who We Are Section (wwa) */
+.wwa-section {
+	background: linear-gradient(#828cde, #6d31d0);
+	display: flex;
+	gap: 120px;
+	justify-content: space-evenly;
+}
+
+#wwa-about-us {
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+	width: 480px;
+}
+
+.wwa-about-us-title {
+	margin: 0;
+	margin-top: 64px;
+	font-family: "Avenir Medium";
+	font-size: 36px;
+	line-height: 40px;
+	text-transform: uppercase;
+	color: white;
+}
+
+#wwa-line {
+	width: 447px;
+	height: 4px;
+	margin-top: 4px;
+	position: relative;
+	background-color: #fdbfa3;
+}
+
+.wwa-about-us-text {
+	margin: 0;
+	margin-top: 24px;
+	font-family: "Avenir Regular";
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+	color: white;
+}
+
+#wwa-about-us .get-in-touch-button {
+	width: 180px;
+	height: 48px;
+	box-shadow: 0px 14px 23px 0px rgba(28, 37, 44, 0.08);
+	margin-top: 54px;
+}
+
+.wwa-team-card {
+	margin-top: 40px;
+	margin-bottom: 35px;
+	display: flex;
+	gap: 13px;
+	width: 580px;
+	height: 440px;
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.8);
+	box-shadow: 0px 14px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.wwa-team-card-image {
+	position: relative;
+	margin: 20px;
+	width: 280px;
+	height: 400px;
+	border-radius: 10px;
+}
+
+.wwa-team-card-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.wwa-team-card-info {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.wwa-team-card-title {
+	margin: 0;
+	margin-top: 44px;
+	margin-left: 7px;
+	font-family: "Montserrat SemiBold";
+	font-size: 20px;
+	line-height: 32px;
+	color: #6d31d0;
+}
+
+.wwa-team-card-name {
+	margin: 0;
+	font-family: "Avenir Regular";
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+	color: #434364;
+}
+
+.wwa-team-card-info .get-in-touch-button {
+	margin-top: 2px;
+	box-shadow: 0px 14px 23px 0px rgba(28, 37, 44, 0.08);
+}
+
+
+/* How Make Happen Section (hmh) */
+.hmh-section {
+	background: linear-gradient(#fefc9e, #fdbfa3);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 60px;
+}
+
+.hmh-headline {
+	margin-top: 80px;
+	max-width: 580px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#hmh-title {
+	margin: 0;
+	font-family: "Avenir Medium";
+	font-size: 36px;
+	line-height: 40px;
+	text-align: center;
+	color: #434364;
+	text-wrap-mode: nowrap;
+}
+
+.hmh-boxes {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 20px;
+	justify-content: center;
+	margin-bottom: 80px;
+}
+
+.hmh-box-set {
+	display: flex;
+	flex-flow: row nowrap;
+	gap: 20px;
+}
+
+.hmh-box {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: flex-start;
+	width: 280px;
+	gap: 24px;
+}
+
+.hmh-icon {
+	width: 120px;
+	height: 120px;
+	border-radius: 800px;
+}
+
+#hmh-icon-1 {
+	background: url("/images/icons/listener.svg") 50% no-repeat,
+	linear-gradient(to right, #828cde, #00b8c3);
+}
+
+#hmh-icon-2 {
+	background: url("/images/icons/target.svg") 50% no-repeat,
+	linear-gradient(to right, #fe6f2d, #ffd059);
+}
+
+#hmh-icon-3 {
+	background: url("/images/icons/heart.svg") 50% no-repeat,
+	linear-gradient(to right, #2ea3f2, #a651fb);
+}
+
+#hmh-icon-4 {
+	background: url("/images/icons/heart2.svg") 50% no-repeat,
+	linear-gradient(to right, #ffb9af 30%, #a651fb);
+}
+
+.hmh-text-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	gap: 4px;
+}
+
+.hmh-text-block h1 {
+	margin: 0;
+	margin-top: 10px;
+	font-family: "Montserrat SemiBold";
+	font-size: 20px;
+	line-height: 32px;
+	text-align: center;
+	color: #6d31d0;
+}
+
+.hmh-text-block p {
+	margin: 0;
+	margin-bottom: 10px;
+	font-family: "Avenir Regular";
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+	text-align: center;
+	color: #434364;
+}
+
+
+/* Contact Us Section */
+.contact-section {
+	background: linear-gradient(180deg, rgba(109, 49, 208, 0.1) 0%, rgba(109, 49, 208, 0.21) 28.65%, rgba(109, 49, 208, 0.475) 53.12%, #6D31D0 100%);
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 130px;
+	padding-right: 130px;
+}
+
+.contact-headline {
+	margin-top: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.contact-headline h1 {
+	margin: 0;
+	font-family: "Avenir Medium";
+	font-size: 36px;
+	line-height: 40px;
+	text-align: center;
+	color: #434364;
+}
+
+.contact-line {
+	width: 380px;
+	height: 4px;
+	background: #fdbfa3;
+}
+
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.contact-tel-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	gap: 6px;
+}
+
+.contact-email-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.contact-icon {
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+}
+
+#contact-icon-tel {
+	background: url("/images/icons/contact-tel.svg") 50% no-repeat,
+	linear-gradient(90deg, #6D31D0 0%, #AB80EF 104.7%);
+}
+
+#contact-icon-email {
+	background: url("/images/icons/contact-email.svg") 50% no-repeat,
+	linear-gradient(90deg, #6D31D0 0%, #AB80EF 104.7%);
+}
+
+.contact-link {
+	font-family: "Montserrat SemiBold";
+	font-size: 20px;
+	line-height: 32px;
+	color: #6D31D0;
+	text-decoration: none;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	margin-bottom: 80px;
+	background: rgba(255, 219, 128, 0.5);
+	border-radius: 60px;
+	backdrop-filter: blur(500px);
+	width: 100%;
+}
+
+.contact-form h1 {
+	margin: 0;
+	margin-top: 35px;
+	font-family: "Avenir Medium";
+	font-size: 28px;
+	line-height: 32px;
+	text-align: center;
+	color: #434364;
+}
+
+.contact-form-fields {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 14px;
+	width: 580px;
+}
+
+.contact-form-field-pair {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 20px;
+}
+
+.contact-form-field {
+	height: 47px;
+	width: 280px;
+	border-radius: 20px;
+	border: none;
+	box-shadow: 0px 4px 8px 0px #1C252C14;
+	padding-left: 23px;
+	box-sizing: border-box;
+}
+
+.contact-form-field::placeholder {
+	margin: 0;
+	margin-left: 23px;
+	font-family: "Avenir Regular";
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	color: #434364;
+	opacity: 0.5;
+}
+
+#contact-form-field-message {
+	resize: none;
+	width: 100%;
+	height: 200px;
+	padding-top: 18px;
+}
+
+.contact-form-conditions {
+	width: 580px;
+	display: flex;
+	justify-content: space-between;
+	gap: 24px;
+}
+
+.conditions-checkbox-container {
+	width: 32px;
+	height: 32px;
+}
+
+#conditions-checkbox {
+	appearance: none;
+	margin: 0;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	background: rgba(255, 255, 255, 0);
+	border: 1px solid white;
+	border-radius: 4px;
+	display: grid;
+	place-content: center;
+}
+
+#conditions-checkbox::after {
+	content: "";
+	width: 32px;
+	height: 32px;
+	background: url("/images/icons/tick.svg") 50% no-repeat, rgba(255, 255, 255, 1);
+	border-radius: 4px;
+	transform: scale(0);
+}
+
+#conditions-checkbox:checked::after {
+	transform: scale(1);
+}
+
+.conditions-label {
+	margin: 0;
+	font-family: "Avenir Regular";
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+	color: #605866;
+}
+
+.conditions-label a {
+	text-decoration: underline;
+	color: #6D31D0;
+}
+
+.condition-label a:visited {
+	color: #6D31D0;
+}
+
+.submit-button {
+	height: 60px;
+	width: 138px;
+	border-radius: 30px;
+	background: #FFDB80;
+	border: none;
+	box-shadow: 0px 14px 23px 0px #1C252C14;
+	font-family: "Avenir Medium";
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 120%;
+	text-align: center;
+	color: #6D31D0;
+	cursor: pointer;
+}
+
+.submit-button:hover {
+	background: linear-gradient(180deg, #828CDE -21.43%, #6D31D0 201.93%);
+	border: 1px solid #FFDB80;
+	color: #FFDB80;
+}
+
+#submit-button-contact {
+	margin-bottom: 34px;
+}
+
+
+/* Our Partners Section */
+.partners-section {
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+	align-items: center;
+	justify-content: space-between;
+	background-color: white;
+}
+
+.partners-section h1 {
+	margin: 0;
+	margin-top: 80px;
+	font-family: "Avenir Medium";
+	font-size: 36px;
+	line-height: 40px;
+	text-align: center;
+	color: #434364;
+}
+
+.partners-icons {
+	margin-bottom: 80px;
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 60px;
+	column-gap: 20px;
+	justify-content: center;
+}
+
+
+/* FAQ */
+.faq-section {
+	background: linear-gradient(180deg, #6D31D0 0%, #828CDE 100%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	gap: 60px;
+}
+
+.faq-section h1 {
+	margin: 0;
+	margin-top: 80px;
+	font-family: "Avenir Medium";
+	font-size: 36px;
+	line-height: 40px;
+	text-align: center;
+	color: white;
+}
+
+
+.faq-swiper-holder {
+	width: 80%;
+}
+
+#faq-swiper-wrapper {
+	/* overflow: hidden; */
+}
+
+.swiper-slide-faq {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	min-height: 500px;
+	height: fit-content;
+	width: 380px;
+	background: white;
+	border-radius: 20px;
+	border: none;
+	gap: 0;
+}
+
+.swiper-slide-faq-fully-visible {
+	opacity: 1;
+}
+
+#swiper-faq {
+	width: 100%;
+}
+
+.faq-picture-holder {
+	height: 200px;
+	width: 100%;
+	margin-top: -1px;
+	position: relative;
+}
+
+.faq-picture-holder img {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+
+.faq-tag {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 30px;
+	min-width: 90px;
+	width: fit-content;
+	background: linear-gradient(90.49deg, #53269D 0%, #6D31D0 100.2%);
+	border-radius: 20px;
+	padding: 0 11px;
+	position: absolute;
+	bottom: 20px;
+	right: 40px;
+}
+
+.faq-tag p {
+	margin: 0;
+	font-family: "Avenir Regular";
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+	text-align: center;
+	color: white;
+}
+
+.faq-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	gap: 20px;
+}
+
+.faq-text h1 {
+	margin: 0;
+	font-family: "Montserrat SemiBold";
+	font-size: 20px;
+	line-height: 32px;
+	text-align: left;
+	color: #6D31D0;
+}
+
+.faq-text p {
+	margin: 0;
+	font-family: "Avenir Regular";
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+	color: #434364;
+}
+
+.faq-swiper-pagination {
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 80px;
+}
+
+
+/* Footer */
+.footer {
+	display: flex;
+	height: 100px;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #828CDE;
+}
+
+#footer-phantom {
+	width: 200px;
+}
+
+#footer-copyright {
+	margin: 0;
+	font-family: "Avenir Regular";
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+	text-align: center;
+	color: white;
+	text-wrap: nowrap;
+}
+
+#footer-copyright a {
+	color: white;
+	text-decoration: none;
+}
+
+#footer-author-link {
+	margin-right: 50px;
+	font-family: "Avenir Regular";
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	text-wrap: nowrap;
+}
+
+/* Media */
+@media screen and (max-width: 1000px) {
+	.header {
+		justify-content: space-around;
+	}
+	.header-menu {
+		display: none;
+	}
+	.hamburger-button {
+		display: flex;
+	}
+	.header-menu-button-text {
+		color: #434364;
+	}
+
+	#slide3 {
+		background:
+			linear-gradient(to bottom, rgba(183, 214, 239, 1), rgba(183, 214, 239, 0)),
+			url("/images/family.jpg");
+		background-size: cover;
+	}
+	#slide4 {
+		background:
+			linear-gradient(to bottom, rgba(116, 96, 69, 1), rgba(116, 96, 69, 0)),
+			url("/images/image4.png");
+		background-size: cover;
+	}
+	#slide5 {
+		background:
+			linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),
+			url("images/image5.jpg");
+		background-size: cover;
+	}
+	#slide6 {
+		background:
+			linear-gradient(to bottom, rgba(142, 161, 189, 1), rgba(142, 161, 189, 0)),
+			url("images/image6.jpg");
+		background-size: cover;
+	}
+
+	.paradise-section {
+		gap: 20px;
+	}
+
+	.transparent-bar {
+		display: none;
+	}
+
+	.map-section {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.map-cyprus {
+		gap: 60px;
+		align-items: center;
+	}
+
+	.map-headline h1 {
+		text-align: center;
+	}
+
+	.map-headline p {
+		font-family: "Avenir Regular";
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: 0.5px;
+		text-align: center;
+	}
+
+	.map-description-card {
+		margin: 0;
+		margin-bottom: 20px;
+	}
+
+	.wwa-section {
+		flex-direction: column;
+		gap: 44px;
+	}
+
+	#wwa-about-us {
+		margin-left: 110px;
+	}
+
+	.wwa-about-us-title {
+		text-transform: capitalize;
+		font-size: 40px;
+		line-height: 29px;
+	}
+
+	#wwa-line {
+		margin-top: 20px;
+	}
+
+	.wwa-about-us-text {
+		width: 680px;
+	}
+
+	#wwa-about-us .get-in-touch-button {
+		margin-bottom: 0;
+		margin-top: 47px;
+	}
+
+	.wwa-team-card {
+		margin-left: 110px;
+		margin-top: 0;
+
+	}
+
+	.contact-form {
+		width: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	#footer-phantom {
+		display: none;
+	}
+
+	#footer-copyright {
+		margin-left: 100px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.slide-blank-space {
+		display: none;
+	}
+
+	.slide-content {
+		width: 80%;
+		margin-left: 5%;
+	}
+
+	#slide2 {
+		background:
+			linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),
+			url("images/image2.jpg");
+		background-size: cover;
+	}
+
+	.our-services-section {
+		gap: 40px;
+	}
+
+	.our-services-card-section {
+		gap: 20px;
+	}
+
+	.our-services-card {
+		width: 580px;
+		height: 500px;
+	}
+
+	#our-services-card-image-1 {
+		scale: 200%;
+	}
+
+	#our-services-card-image-2 {
+		object-position: 0px -340px;
+	}
+
+	.paradise-section {
+		flex-direction: column;
+		align-items: center;
+		gap: 40px;
+		padding-top: 0;
+	}
+
+	.paradise-img-wrapper {
+		width: 100%;
+		flex: 1;
+	}
+
+	.paradise-img-wrapper img {
+		object-fit: cover;
+		max-height: 300px;
+	}
+
+	.paradise-content {
+		padding-left: 40px;
+		padding-right: 40px;
+
+	}
+
+	.paradise-title {
+		text-align: center;
+	}
+
+	.wcc-section {
+		z-index: 2;
+	}
+
+	.wcc-headline {
+		max-width: 80%;
+	}
+
+	.map-headline {
+		width: 380px;
+	}
+
+	.map-holder {
+		height: 290px;
+		width: 480px;
+	}
+
+	.map-grey-section {
+		scale: calc(100% / 1.41875);
+	}
+
+	#map-grey-section-north {
+		top: -221px;
+		left: 104px;
+	}
+
+	#map-grey-section-east {
+		top: -388px;
+		left: 220px;
+	}
+
+	.map-city {
+		scale: calc(100% / 1.41875);
+	}
+
+	#nicosia-map {
+		top: -532px;
+		left: 20px;
+	}
+
+	#paphos-map {
+		top: -679px;
+		left: -20px;
+	}
+
+	#limassol-map {
+		top: -830px;
+		left: 51px;
+	}
+
+	#larnaka-map {
+		top: -1039px;
+		left: 147px;
+	}
+
+	#nicosia-map-label {
+		top: -620px;
+		left: 150px;
+	}
+
+	#paphos-map-label {
+		top: -770px;
+		left: 30px;
+	}
+
+	#limassol-map-label {
+		top: -920px;
+		left: 110px;
+	}
+
+	#larnaka-map-label {
+		top: -1110px;
+		left: 205px;
+	}
+
+	.wwa-section {
+		align-items: center;
+	}
+
+	#wwa-about-us {
+		margin-left: 0;
+		width: 580px;
+	}
+
+	.wwa-about-us-title {
+		align-self: center;
+	}
+
+	#wwa-line {
+		width: 80%;
+	}
+
+	.wwa-about-us-text {
+		width: 100%;
+	}
+
+	#wwa-about-us .get-in-touch-button {
+		margin-top: 30px;
+	}
+
+	.wwa-team-card {
+		margin-left: 0;
+	}
+
+	.hmh-box {
+		width: 180px;
+	}
+
+	.partners-section {
+		gap: 40px;
+	}
+
+	.partners-section h1 {
+		margin-top: 60px;
+	}
+
+	.partners-icons {
+		row-gap: 40px;
+		margin-bottom: 60px;
+	}
+
+	.footer {
+		flex-direction: column;
+		justify-content: center;
+		height: 160px;
+	}
+
+	#footer-copyright {
+		margin: 0;
+		font-weight: bold;
+	}
+
+	#footer-copyright a {
+		font-weight: normal;
+	}
+
+	#footer-author-link {
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.upper-sections {
+		flex-direction: column-reverse;
+	}
+
+	.swiper-pagination {
+		display: none;
+	}
+
+	.faq-swiper-pagination {
+		display: flex;
+	}
+
+	.swiper-slide {
+		align-items: center;
+	}
+
+	.slide-content {
+		align-items: center;
+	}
+
+	.slide-tags {
+		justify-content: center;
+	}
+
+	.slide-header1 {
+		text-align: center;
+	}
+
+	.slide-header2 {
+		text-align: center;
+	}
+
+	.slide-sub-header {
+		text-align: center;
+	}
+
+	.slide-paragraph1 {
+		text-align: center;
+	}
+
+	.slide-paragraph2 {
+		text-align: center;
+	}
+
+	.get-in-touch-button {
+		display: none;
+	}
+
+	.our-services-card {
+		width: 380px;
+		height: auto;
+	}
+
+	#our-services-card-image-1 {
+		scale: 250%;
+	}
+
+	#our-services-card-image-2 {
+		object-position: 0px -190px;
+	}
+
+	.wcc-section {
+		gap: 40px;
+	}
+
+	.wcc-headline {
+		margin-top: 60px;
+		gap: 30px;
+	}
+
+	.wcc-headline h1 {
+		font-family: "Montserrat SemiBold";
+		font-size: 40px;
+		line-height: 29px;
+	}
+
+	.wcc-boxes {
+		margin-bottom: 60px;
+	}
+
+	.wcc-box {
+		width: 180px;
+	}
+
+	.wcc-icon {
+		height: 100px;
+		width: 100px;
+	}
+
+	#wcc-icon-1 {
+		background: url("/images/icons/money-bag.svg") 50%/60% no-repeat,
+		linear-gradient(to right, #828cde, #6d31d0);
+	}
+
+	#wcc-icon-2 {
+		background: url("/images/icons/haze.svg") 50%/60% no-repeat,
+		linear-gradient(to right, #fe6f2d, #ffd059);
+	}
+
+	#wcc-icon-3 {
+		background: url("/images/icons/human-resources.svg") 50%/60% no-repeat,
+		linear-gradient(to right, #828cde, #00b8c3);
+	}
+
+	#wcc-icon-4 {
+		background: url("/images/icons/house.svg") 50%/60% no-repeat,
+		linear-gradient(to right, #ffb9af 30%, #a651fb);
+	}
+
+	#wwa-about-us {
+		width: 380px;
+	}
+
+	.wwa-section {
+		gap: 40px;
+	}
+
+	.wwa-about-us-title {
+		align-self: auto;
+	}
+
+	.wwa-about-us-text {
+		width: 100%;
+	}
+
+	.wwa-team-card {
+		width: 380px;
+		height: 600px;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 0px;
+	}
+
+	.wwa-team-card-image {
+		margin-bottom: 0;
+	}
+
+	.wwa-team-card-info {
+		gap: 0px;
+		align-items: center;
+		margin-top: 14px;
+	}
+
+	.wwa-team-card-title {
+		margin-top: 0;
+	}
+
+	.wwa-team-card-name {
+		margin-top: 0;
+	}
+
+	.wwa-team-card-info .get-in-touch-button {
+		margin-top: 20px;
+		display: flex;
+		margin-bottom: 40px;
+	}
+
+	.contact-section {
+		gap: 40px;
+	}
+
+	.contact-headline {
+		margin-top: 60px;
+	}
+
+	.contact-form {
+		margin-bottom: 60px;
+	}
+
+	.contact-form-fields {
+		width: 380px;
+	}
+
+	.contact-form-field-pair {
+		flex-direction: column;
+		align-items: center;
+		gap: 14px;
+	}
+
+	.contact-form-field {
+		width: 380px;
+	}
+
+	.contact-form-conditions {
+		width: 380px;
+	}
+
+	.footer {
+		gap: 26px;
+	}
+}

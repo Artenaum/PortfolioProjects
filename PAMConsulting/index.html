@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PamConsulting Home</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+	<header>
+		<div class="header">
+			<img class="logo" src="images/logo.png">
+
+			<span class="header-menu">
+				<button class="header-menu-button">
+					<p class="header-menu-button-text">HOME</p>
+				</button>
+				<button class="header-menu-button">
+					<p class="header-menu-button-text">ABOUT US</p>
+				</button>
+				<button class="header-menu-button" id="services-button" onclick="servicesDropdown()">
+					<p class="header-menu-button-text">SERVICES v</p>
+					<div class="services-menu">
+						<a class="services-menu-link">Investments opportunities</a>
+						<a class="services-menu-link">Business relocation</a>
+						<a class="services-menu-link">Family relocation</a>
+					</div>
+				</button>
+				<button class="header-menu-button">
+					<p class="header-menu-button-text">INVEST IN CYPRUS</p>
+				</button>
+				<button class="header-menu-button">
+					<p class="header-menu-button-text">MIGRATION</p>
+				</button>
+				<button class="header-menu-button">
+					<p class="header-menu-button-text">CONTACT US</p>
+				</button>
+			</span>
+
+			<div class="header-end">
+				<button class="get-in-touch-button">
+					<p class="get-in-touch-text">Get in touch</p>
+				</button>
+
+				<button class="hamburger-button" onclick="hamburger()">
+					<div class="hamburger-stick"></div>
+					<div class="hamburger-stick"></div>
+					<div class="hamburger-stick"></div>
+				</button>
+			</div>
+		</div>
+
+		<div class="hamburger-menu">
+			<button class="header-menu-button">
+				<p class="header-menu-button-text">HOME</p>
+			</button>
+			<button class="header-menu-button">
+				<p class="header-menu-button-text">ABOUT US</p>
+			</button>
+			<button class="header-menu-button">
+				<p class="header-menu-button-text">SERVICES</p>
+			</button>
+			<button class="header-menu-button">
+				<p class="header-menu-button-text">INVEST IN CYPRUS</p>
+			</button>
+			<button class="header-menu-button">
+				<p class="header-menu-button-text">CONTACT US</p>
+			</button>
+		</div>
+	</header>
+
+	<main>
+		<div class="main-flex">
+			<div class="upper-sections">
+				<div class="swiper" id="swiper-offer">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" id="slide1">
+							<div class="slide-content">
+								<div class="slide-tags">
+									<button class="slide-tag">
+										<p class="slide-tag-text">INVESTMENTS</p>
+									</button>
+									<span class="slide-tag-separator1"></span>
+									<button class="slide-tag">
+										<p class="slide-tag-text">BUSINESS RELOCATION</p>
+									</button>
+									<span class="slide-tag-separator1"></span>
+									<button class="slide-tag">
+										<p class="slide-tag-text">FAMILY RELOCATION</p>
+									</button>
+								</div>
+
+								<span class="slide-headers">
+									<h1 class="slide-header1">Relocating to Cyprus</h1>
+									<h3 class="slide-sub-header">
+										Seamless - Exceptional - Experience
+									</h3>
+								</span>
+
+								<p class="slide-paragraph1">
+									The captivating Mediterranean island of Cyprus has become a business haven with a flourishing expat community. The strategic location that grants networking opportunities and the stability of being in the EU offers entrepreneurs the abilities they need to thrive.
+								</p>
+
+								<button class="find-out-more-button">Find out more</button>
+							</div>
+							<span class="slide-blank-space"></span>
+							<div class="slide-bottom"></div>
+						</div>
+
+						<div class="swiper-slide" id="slide2">
+							<div class="slide-content">
+								<div class="slide-tags">
+									<button class="slide-tag">
+										<p class="slide-tag-text">INVESTMENTS</p>
+									</button>
+									<span class="slide-tag-separator2"></span>
+									<button class="slide-tag">
+										<p class="slide-tag-text">BUSINESS RELOCATION</p>
+									</button>
+									<span class="slide-tag-separator2"></span>
+									<button class="slide-tag">
+										<p class="slide-tag-text">FAMILY RELOCATION</p>
+									</button>
+								</div>
+								<h1 class="slide-header2">Invest in property in Cyprus</h1>
+								<p class="slide-paragraph2">
+									Real estate has become a flourishing type of investment on the island, with an increasing number of people seeking to invest in residential and commercial property projects in Cyprus. With a confident and stable economic outlook, it is a great time to consider investing in Cyprus property. 
+								</p>
+								<button class="find-out-more-button">Check more</button>
+							</div>
+							<span class="slide-blank-space"></span>
+						</div>
+
+						<div class="swiper-slide" id="slide3">
+							<div class="slide-content">
+								<div class="slide-tags">
+									<button class="slide-tag">
+										<p class="slide-tag-text">INVESTMENTS</p>
+									</button>
+									<span class="slide-tag-separator2"></span>
+									<button class="slide-tag">
+										<p class="slide-tag-text">BUSINESS RELOCATION</p>
+									</button>
+									<span class="slide-tag-separator2"></span>
+									<button class="slide-tag">
+										<p class="slide-tag-text">FAMILY RELOCATION</p>
+									</button>
+								</div>
+								<h1 class="slide-header2">Family Relocation</h1>
+								<p class="slide-paragraph2">
+									Globally known as one of the safest places to live in the world, Cyprus is the ideal location for families. The healthy lifestyle and family-friendly communities have much to offer to every member of your family.
+								</p>
+								<button class="find-out-more-button">Check more</button>
+							</div>
+							<span class="slide-blank-space"></span>
+						</div>
+
+						<div class="swiper-slide" id="slide4">
+							<div class="slide-content">
+								<div class="slide-tags">
+									<button class="slide-tag">
+										<p class="slide-tag-text">INVESTMENTS</p>
+									</button>
+									<span class="slide-tag-separator1"></span>
+									<button class="slide-tag">
+										<p class="slide-tag-text">BUSINESS RELOCATION</p>
+									</button>
+									<span class="slide-tag-separator1"></span>
+									<button class="slide-tag">
+										<p class="slide-tag-text">FAMILY RELOCATION</p>
+									</button>
+								</div>
+								<h1 class="slide-header1">Business Relocation</h1>
+								<p class="slide-paragraph1">
+									Cyprus has a lot to offer for business entrepreneurs who aim to reach for more and expand their business goals. The attractive tax benefits and office locations have transformed Cyprus into a country with endless business opportunities for everyone.
+								</p>
+								<button class="find-out-more-button">Check more</button>
+							</div>
+							<span class="slide-blank-space"></span>
+						</div>
+
+						<div class="swiper-slide" id="slide5">
+							<div class="slide-content">
+								<div class="slide-tags">
+									<button class="slide-tag">
+										<p class="slide-tag-text">INVESTMENTS</p>
+									</button>
+									<span class="slide-tag-separator2"></span>
+									<button class="slide-tag">
+										<p class="slide-tag-text">BUSINESS RELOCATION</p>
+									</button>
+									<span class="slide-tag-separator2"></span>
+									<button class="slide-tag">
+										<p class="slide-tag-text">FAMILY RELOCATION</p>
+									</button>
+								</div>
+								<h1 class="slide-header2">Investing in Yachts</h1>
+								<p class="slide-paragraph2">
+									Living on an island is an adventure that opens up a wide range of experiences and possibilities. Here, you can conquer the Mediterranean Sea by renting or owning a yacht as part of your investment plan.
+								</p>
+								<button class="find-out-more-button">Check more</button>
+							</div>
+							<span class="slide-blank-space"></span>
+						</div>
+
+						<div class="swiper-slide" id="slide6">
+							<div class="slide-content">
+								<div class="slide-tags">
+									<button class="slide-tag">
+										<p class="slide-tag-text">INVESTMENTS</p>
+									</button>
+									<span class="slide-tag-separator1"></span>
+									<button class="slide-tag">
+										<p class="slide-tag-text">BUSINESS RELOCATION</p>
+									</button>
+									<span class="slide-tag-separator1"></span>
+									<button class="slide-tag">
+										<p class="slide-tag-text">FAMILY RELOCATION</p>
+									</button>
+								</div>
+								<h1 class="slide-header1">Moving to Cyprus</h1>
+								<p class="slide-paragraph1">
+									Thousands of individuals and families from every part of the globe have immigrated to Cyprus after discovering their perfect place to call home. The island is now one of the most dominant destinations with huge expat communities.
+								</p>
+								<button class="find-out-more-button">Check more</button>
+							</div>
+							<span class="slide-blank-space"></span>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+
+				<div class="our-services-section">
+					<div class="our-services-headline">
+						<h2>OUR SERVICES</h2>
+						<div class="our-services-headline-line"></div>
+					</div>
+					<div class="our-services-card-section">
+						<div class="our-services-card">
+							<div class="our-services-card-image-container">
+								<img src="images/family.jpg" id="our-services-card-image-1">
+							</div>
+							<div class="our-services-card-content">
+								<h3>FAMILY<br>RELOCATION</h3>
+								<p>With strategic planning, we simplify the moving process so you and your family can feel safe and confident.</p>
+								<button class="find-out-more-button">Find Out More</button>
+							</div>
+						</div>
+						<div class="our-services-card">
+							<div class="our-services-card-image-container">
+								<img src="images/hands.jpg" id="our-services-card-image-2">
+							</div>
+							<div class="our-services-card-content">
+								<h3>BUSINESS<br>RELOCATION</h3>
+								<p>We handle the responsibility of moving your business to Cyprus, so you can focus on your business goals.</p>
+								<button class="find-out-more-button">Find Out More</button>
+							</div>
+						</div>
+						<div class="our-services-card">
+							<div class="our-services-card-image-container">
+								<img src="images/house_offer.jpg">
+							</div>
+							<div class="our-services-card-content">
+								<h3>INVESTMENT<br>PLANS</h3>
+								<p>Discover the opportunity to further enhance your business ambitions, by choosing the optimal investment plan.</p>
+								<button class="find-out-more-button">Find Out More</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="paradise-section">
+				<div class="paradise-img-wrapper" id="paradise-img-wrapper-left">
+					<img src="images/image2.jpg">
+					<span class="transparent-bar"></span>
+				</div>
+				<span class="paradise-content">
+					<h1 class="paradise-title">MOVING TO PARADISE</h1>
+					<p class="paradise-text">
+						Have you ever dreamed about the perfect place to live? Your definition of perfect may be different someone else’s. Are you longing to live by the beach and listen to the soothing waves or are you a kind of person who enjoys the bustling sounds of the city? Whatever lifestyle you desire, Cyprus has it all! Whether you’re travelling with your family, your partner, or as a solo business entrepreneur, this exotic island can offer you a little bit of everything.
+					</p>
+					<p class="paradise-text">
+						If you’ve made the decision to relocate to Cyprus, then you are expecting to find a safe place to settle. With extremely low crime rate, stunning sandy beaches, and awe-inspiring mountain views, Cyprus is the place to be!
+					</p>
+					<button class="find-out-more-button">Find Out More</button>
+				</span>
+				<div class="paradise-img-wrapper" id="paradise-img-wrapper-right">
+					<img src="images/image7.jpg">
+					<span class="transparent-bar"></span>
+				</div>
+			</div>
+
+			<div class="wcc-section">
+				<div class="wcc-headline">
+					<h1 id="wcc-headline-title">WHY CHOOSE CYPRUS?</h1>
+					<p>When you’re searching for the ideal home you want everything to be perfect. This is why over the years more and more people from all around the world are choosing Cyprus as their ultimate destination. This smal Mediterranean mesmerizes millions of visitors every year.</p>
+				</div>
+				<div class="wcc-boxes">
+					<div class="wcc-box-set">
+						<div class="wcc-box">
+							<div class="wcc-icon" id="wcc-icon-1"></div>
+							<div class="wcc-text-block">
+								<h1>Progressive tax system</h1>
+								<p>Offering one of the most attractive tax regimes in Europe</p>
+							</div>
+						</div>
+						<div class="wcc-box">
+							<div class="wcc-icon" id="wcc-icon-2"></div>
+							<div class="wcc-text-block">
+								<h1>Stunning weather and climate</h1>
+								<p>Enjoy a high quality of life with over 324 days of sun annually</p>
+							</div>
+						</div>
+					</div>
+					<div class="wcc-box-set">
+						<div class="wcc-box">
+							<div class="wcc-icon" id="wcc-icon-3"></div>
+							<div class="wcc-text-block">
+								<h1>Blooming expat community</h1>
+								<p>Become part of an increasingly diverse community</p>
+							</div>
+						</div>
+						<div class="wcc-box">
+							<div class="wcc-icon" id="wcc-icon-4"></div>
+							<div class="wcc-text-block">
+								<h1>Family-oriented values</h1>
+								<p>Excellent education standards and extremely low crime rates</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="map-section">
+				<div class="map-cyprus">
+					<div class="map-headline">
+						<h1>FIND THE IDEAL LOCATION TO CALL HOME</h1>
+						<p id="map-headline-paragraph">Click your mouse over any city to learn more about it</p>
+					</div>
+					<div class="map-holder">
+						<img id="map-background" src="/images/map/cyprus_map_background.png">
+						<img class="map-grey-section" id="map-grey-section-north" src="/images/map/grey_section_north.png">
+						<img class="map-grey-section" id="map-grey-section-east" src="/images/map/grey_section_east.png">
+
+						<img class="map-city" id="nicosia-map" src="/images/map/nicosia_map.png">
+						<p class="map-label" id="nicosia-map-label">NICOSIA</p>
+
+						<img class="map-city" id="paphos-map" src="/images/map/paphos_map.png">
+						<p class="map-label" id="paphos-map-label">PAPHOS</p>
+
+						<img class="map-city" id="limassol-map" src="/images/map/limassol_map.png">
+						<p class="map-label" id="limassol-map-label">LIMASSOL</p>
+
+						<img class="map-city" id="larnaka-map" src="/images/map/larnaka_map.png">
+						<p class="map-label" id="larnaka-map-label">LARNAKA</p>
+					</div>
+				</div>
+				<div class="map-description-card" id="map-description-card-limassol">
+					<div class="map-description-images">
+						<div class="map-description-image-holder">
+							<img src="/images/cities/limassol_image1.png">
+						</div>
+						<div class="map-description-image-holder">
+							<img src="/images/cities/limassol_image2.png">
+						</div>
+						<div class="map-description-image-holder">
+							<img src="/images/cities/limassol_image3.png">
+						</div>
+					</div>
+					<div class="map-city-description">
+						<h1 class="map-city-description-title">Limassol</h1>
+						<p class="map-city-description-text">The sunny city of Limassol is the second largest city of the island, and it is among the most desirable travel and business destinations both for families and for entrepreneurs looking to expand their business horizons. The combination of elegant accommodation and ancient architectural views is bound to capture the interest of people of any age. 
+						<br><br>
+						The Limassol Marina is the first marina to harbor yachts in Cyprus and it is surrounded by renowned bars and restaurants. The residents of Limassol pride themselves on their cultural values and festivities as hundreds of theatrical performances take place each year at the Rialto theater, and the city holds an annual Wine Festival and Carnival Parade.</p>
+					</div>
+				</div>
+
+				<div class="map-description-card" id="map-description-card-nicosia">
+					<div class="map-description-images">
+						<div class="map-description-image-holder">
+							<img src="images/cities/nicosia_image1.png">
+						</div>
+						<div class="map-description-image-holder">
+							<img src="images/cities/nicosia_image2.png">
+						</div>
+						<div class="map-description-image-holder">
+							<img src="images/cities/nicosia_image3.png">
+						</div>
+					</div>
+					<div class="map-city-description">
+						<h1 class="map-city-description-title">Nicosia</h1>
+						<p class="map-city-description-text">Also known as Lefkosia, Nicosia is the capital city of Cyprus and the only divided capital city in the world. The unique urban scenery is built upon a rich historical past and its mixture with modern lifestyle.
+						<br><br>
+						It is in close proximity to every other city in Cyprus, giving residents the flexibility of choosing to enjoy the breathtaking views from the mountain tops and soothing beaches of the coastal cities within minutes.
+						<br><br>
+						Nicosia has become an attractive cosmopolitan city made of diverse cultural communities, excellent healthcare facilities and every aspect one requires to build the lifestyle of your dreams.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="wwa-section">
+				<div id="wwa-about-us">
+					<h1 class="wwa-about-us-title">Who We Are</h1>
+					<div id="wwa-line"></div>
+					<p class="wwa-about-us-text">PAM Consulting is built upon a team of motivated professionals aiming to provide families and businesses the services they need to relocate to the island of Cyprus.<br><br>We understand the challenges of deciding to relocate and this is why we prioritize our clients’ needs by making sure that the whole relocation process is as smooth and simple as possible.</p>
+					<button class="get-in-touch-button">
+						<p class="get-in-touch-text">More about us</p>
+					</button>
+				</div>
+				<div class="wwa-team-card">
+					<div class="wwa-team-card-image">
+						<img src="/images/founder.jpg">
+					</div>
+					<div class="wwa-team-card-info">
+						<h1 class="wwa-team-card-title">FOUNDER</h1>
+						<p class="wwa-team-card-name">Anastasia Papaharidemou</p>
+						<button class="get-in-touch-button">
+							<p class="get-in-touch-text">Contact</p>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="hmh-section">
+				<div class="hmh-headline">
+					<h1 id="hmh-title">HOW WE MAKE IT HAPPEN</h1>
+				</div>
+				<div class="hmh-boxes">
+					<div class="hmh-box-set">
+						<div class="hmh-box">
+							<div class="hmh-icon" id="hmh-icon-1"></div>
+							<div class="hmh-text-block">
+								<h1>We listen</h1>
+								<p>Our most prominent purpose is to understand and identify with your needs so we can effectively find ways to provide solutions.</p>
+							</div>
+						</div>
+						<div class="hmh-box">
+							<div class="hmh-icon" id="hmh-icon-2"></div>
+							<div class="hmh-text-block">
+								<h1>We strategize</h1>
+								<p>According to your requirements, our team designs a thorough series of steps that will make the relocation process as smooth as possible.</p>
+							</div>
+						</div>
+					</div>
+					<div class="hmh-box-set">
+						<div class="hmh-box">
+							<div class="hmh-icon" id="hmh-icon-3"></div>
+							<div class="hmh-text-block">
+								<h1>We provide</h1>
+								<p>We implement our services that are based on efficient strategic planning that respond to your family’s and business’s goals and ambitions.</p>
+							</div>
+						</div>
+						<div class="hmh-box">
+							<div class="hmh-icon" id="hmh-icon-4"></div>
+							<div class="hmh-text-block">
+								<h1>We manage</h1>
+								<p>Once you are settled, we make sure that everything is according to your expectations and your vision of the quality of our services.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="contact-section">
+				<div class="contact-headline">
+					<h1>CONTACT US</h1>
+					<div class="contact-line"></div>
+				</div>
+				<div class="contact-info">
+					<div class="contact-tel-block">
+						<div class="contact-icon" id="contact-icon-tel"></div>
+						<a class="contact-link" href="tel:+3579056759">+357 9056759</a>
+					</div>
+					<div class="contact-email-block">
+						<div class="contact-icon" id="contact-icon-email"></div>
+						<a class="contact-link" href="mailto:contact@pamrelocation.com">contact@pamrelocation.com</a>
+					</div>
+				</div>
+				<div class="contact-form">
+					<h1>SEND INQUIRY</h1>
+					<div class="contact-form-fields">
+						<div class="contact-form-field-pair">
+							<input class="contact-form-field" placeholder="Your Name">
+							<input type="email" class="contact-form-field" placeholder="Email">
+						</div>
+						<div class="contact-form-field-pair">
+							<input class="contact-form-field" placeholder="Subject">
+							<input type="tel" class="contact-form-field" placeholder="Phone">
+						</div>
+						<textarea class="contact-form-field" id="contact-form-field-message" placeholder="Your message"></textarea>
+					</div>
+					<div class="contact-form-conditions">
+						<div class="conditions-checkbox-container">
+							<input type="checkbox" id="conditions-checkbox">
+						</div>
+						<label for="conditions-checkbox" class="conditions-label">By clicking "Submit button" you accept our <a href="#">Terms & Conditions</a> and have read our <a href="#">Privacy Policy</a> and <a href="#">Disclaimer</a></label>
+					</div>
+					<button class="submit-button" id="submit-button-contact">Submit</button>
+				</div>
+			</div>
+
+			<div class="partners-section">
+				<h1>OUR PARTNERS</h1>
+				<div class="partners-icons">
+					<img src="/images/partners/partner1.png">
+					<img src="/images/partners/partner2.png">
+					<img src="/images/partners/partner3.png">
+					<img src="/images/partners/partner4.png">
+					<img src="/images/partners/partner5.png">
+					<img src="/images/partners/partner2.png">
+				</div>
+			</div>
+
+			<div class="faq-section">
+				<h1>FREQUENTLY ASKED QUESTIONS</h1>
+				<div class="faq-swiper-holder">
+					<div class="swiper" id="swiper-faq" style="width: 100%; height: 800px">
+						<div class="swiper-wrapper" id="faq-swiper-wrapper">
+							<div class="swiper-slide swiper-slide-faq" id="swiper-faq-slide1">
+								<div class="faq-picture-holder">
+									<img src="/images/faq-image.png">
+									<div class="faq-tag">
+										<p>Business</p>
+									</div>
+								</div>
+								<div class="faq-text">
+									<h1>Question: How is the business environment in Cyprus?</h1>
+									<p>Answer: Cyprus is considered to be one of the most business-oriented countries of the EU, offering business entrepreneurs a variety of opportunities to expand their corporate dreams and ambitions.</p>
+								</div>
+							</div>
+							<div class="swiper-slide swiper-slide-faq" id="swiper-faq-slide2">
+								<div class="faq-picture-holder">
+									<img src="/images/faq-image.png">
+									<div class="faq-tag">
+										<p>Prices</p>
+									</div>
+								</div>
+								<div class="faq-text">
+									<h1>Question: What is the cost of living in Cyprus?</h1>
+									<p>Answer: In comparison to other countries of the EU, the cost of living is relatively low. Of course, the cost of living varies from city to city. For example, this means that living in Paphos might be a bit cheaper than living in Limassol.</p>
+								</div>
+							</div>
+							<div class="swiper-slide swiper-slide-faq" id="swiper-faq-slide3">
+								<div class="faq-picture-holder">
+									<img src="/images/faq-image.png">
+									<div class="faq-tag">
+										<p>Migration</p>
+									</div>
+								</div>
+								<div class="faq-text">
+									<h1>Question: What are the best cities in Cyprus for expats?</h1>
+									<p>Answer: As Cyprus is among the most attractive destinations for people from different parts of the globe, large and thriving expat communities can be found in Paphos, Limassol, Larnaca, Nicosia.</p>
+								</div>
+							</div>
+							<div class="swiper-slide swiper-slide-faq" id="swiper-faq-slide4">
+								<div class="faq-picture-holder">
+									<img src="/images/faq-image.png">
+									<div class="faq-tag">
+										<p>Taxes</p>
+									</div>
+								</div>
+								<div class="faq-text">
+									<h1>Question: What is the Tax system like in Cyprus?</h1>
+									<p>Answer: With one of the lowest corporate tax rates (12.5%) in the European Union, the tax system is attractive to foreign investors. Neither succession taxes nor gains from the disposal of securities are subject to tax.</p>
+								</div>
+							</div>
+							<div class="swiper-slide swiper-slide-faq" id="swiper-faq-slide5">
+								<div class="faq-picture-holder">
+									<img src="/images/faq-image.png">
+									<div class="faq-tag">
+										<p>Investment</p>
+									</div>
+								</div>
+								<div class="faq-text">
+									<h1>How long does it take to buy a property in Cyprus?</h1>
+									<p>Answer: The whole procedure for pur-chasing property in Cyprus should only take about 1-3 months. Of course, each situation is different and this timeframe may vary from one individual to another. Our relocation services aim to simplify this process by providing guidance and assistance from start to finish.</p>
+								</div>
+							</div>
+							<div class="swiper-slide swiper-slide-faq" id="swiper-faq-slide6">
+								<div class="faq-picture-holder">
+									<img src="/images/faq-image.png">
+									<div class="faq-tag">
+										<p>Migration</p>
+									</div>
+								</div>
+								<div class="faq-text">
+									<h1>Question: How long does it take to become a permament resident in Cyprus?</h1>
+									<p>Answer: While a residency card can be obtained within two months through the fast-track process, a permanent resident of Cyprus can apply for Cyprus Citizenship after completing 5 years (1825 days) of legal stay in Cyprus, according to the naturalization scheme based on years of residence (M127). Once acquired, permanent residency in Cyprus is valid for life.</p>
+								</div>
+							</div>
+							<div class="swiper-slide swiper-slide-faq" id="swiper-faq-slide7">
+								<div class="faq-picture-holder">
+									<img src="/images/faq-image.png">
+									<div class="faq-tag">
+										<p>Family Relocation</p>
+									</div>
+								</div>
+								<div class="faq-text">
+									<h1>Question: Is Cyprus a good country to live with a family?</h1>
+									<p>Answer: Cyprus is a perfect location for every type of family looking for a place to settle with their children. The stunning weather combined with great education programs, excellent healthcare system, and the ability to live in one of the safest countries in the world makes Cyprus a top choice among thousands every year.</p>
+								</div>
+							</div>
+							<div class="swiper-slide swiper-slide-faq" id="swiper-faq-slide8">
+								<div class="faq-picture-holder">
+									<img src="/images/faq-image.png">
+									<div class="faq-tag">
+										<p>Invest in Cyprus</p>
+									</div>
+								</div>
+								<div class="faq-text">
+									<h1>Question: Does PAM Consulting offer any Investment Plans?</h1>
+									<p>Answer: Of course! Our services include the provision of a variety of investment opportunities you can choose from, depending on your needs and economic outlook.</p>
+								</div>
+							</div>
+							<div class="swiper-slide swiper-slide-faq" id="swiper-faq-slide9">
+								<div class="faq-picture-holder">
+									<img src="/images/faq-image.png">
+									<div class="faq-tag">
+										<p>Business</p>
+									</div>
+								</div>
+								<div class="faq-text">
+									<h1>Question: Is Cyprus a member of the European Union (EU)?</h1>
+									<p>Answer: Yes, Cyprus has been a member of the EU since 2004.</p>
+								</div>
+							</div>
+							<div class="swiper-slide swiper-slide-faq" id="swiper-faq-slide10">
+								<div class="faq-picture-holder">
+									<img src="/images/faq-image.png">
+									<div class="faq-tag">
+										<p>Migration</p>
+									</div>
+								</div>
+								<div class="faq-text">
+									<h1>Question: Am I eligible to receive public healthcare if I am a permanent resident of Cyprus?</h1>
+									<p>Answer: Yes, you are. In accordance with National Legislation, Cyprus citizens with permanent residency rights and those whose ordinary residence is in an area controlled by the Cyprus Government are entitled to healthcare services under GHS.</p>
+								</div>
+							</div>
+							<div class="swiper-slide swiper-slide-faq" id="swiper-faq-slide11">
+								<div class="faq-picture-holder">
+									<img src="/images/faq-image.png">
+									<div class="faq-tag">
+										<p>Family Relocation</p>
+									</div>
+								</div>
+								<div class="faq-text">
+									<h1>Question: Do my children have the option of attending a private or public school in Cyprus if I have a permanent residency?</h1>
+									<p>Answer: Yes. Public schools are free, while private educational institutions have tuition.</p>
+								</div>
+							</div>
+							<div class="swiper-slide swiper-slide-faq" id="swiper-faq-slide12">
+								<div class="faq-picture-holder">
+									<img src="/images/faq-image.png">
+									<div class="faq-tag">
+										<p>Migration</p>
+									</div>
+								</div>
+								<div class="faq-text">
+									<h1>Question: How can I contact PAM Consulting?</h1>
+									<p>Answer: You can contact our team by simply visiting the “Contact Us” page, where you can find out contact details (email, telephone number) or fill in a form so we can get back to you as soon as possible.</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination faq-swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer">
+				<div id="footer-phantom"></div>
+				<p id="footer-copyright">&copy; 2022 PAM Consulting. All rights reserved | <a href="#">Disclaimer</a> | <a href="#">Privacy policy</a></p>
+				<a id="footer-author-link" href="#">Who designed this website?</a>
+			</div>
+		</div>
+	</main>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
