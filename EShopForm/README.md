@@ -1,4 +1,5 @@
 Форма для авторизации/регистрации на React.
+Для формы используется React Hook Form, а для валидации - Yup.
 
 ![EShopForm1](EShopForm1.png)
 ![EShopForm2](EShopForm2.png)
